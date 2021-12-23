@@ -4,11 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+
+    <!-- link to CSS -->
+    <link href="style.css" rel="stylesheet">
+
     <title>Portfolio of Chris W. Logothetis</title>
 </head>
 
 <body>
-    
+    <!-- nav bar doesn't need to be in grid, a bit overkill, but keeps everything below aligned properly -->
+    <header class="header header-home main-grid">
+        <div class="header-content">
+            <!-- insert logo later, just text for MVP -->
+            <a href="index.html" class="logo-link">Chris W. Logothetis</a>
+            
+            <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+
+            <nav class="nav">
+                <button aria-label="Close navigation" class="close-nav">&times;</button>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html#about-me" class="nav-link current">about me</a></li>
+                    <li class="nav-item"><a href="index.html#projets" class="nav-link current">projects</a></li>
+                    <li class="nav-item"><a href="mailto:cwlogo@pm.me" class="nav-link">cwlogo@pm.me</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Hi,</br>I'm Chris</br>Logothetis</h1>
+            <p>JavaScript</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+        </section>
+
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I’m a front-end developer and, having worked in the UK, Greece and Japan, I’m in my element working with people from around the globe.</p>
+            <p>Once upon a time, I spent seven years as a lawyer in London, but I really love building stuff and the law just wasn’t for me.</p>
+            <p>So I first built and ran my own business, and it was there that I fell in love with design and UX, then code and UI.</p>
+        </section>
+
+        <section class="skills">
+            <div class="stack">
+                <a href="#" class="stack-link"><i class="fab fa-js"></i></a>
+                <a href="#" class="stack-link"><i class="fab fa-html5"></i></a>
+                <a href="#" class="stack-link"><i class="fab fa-css3-alt"></i></a>
+                <img src="img/tailwindcss-mark.svg" class="stack-link">
+                <a href="#" class="stack-link"><i class="fab fa-figma"></i></a>
+                <a href="#" class="stack-link"><i class="fab fa-git-alt"></i></a>
+            </div>
+
+            <div class="languages-grid">
+                <p class="lingo">ENGLISH</p>
+                <p class="lingo">GREEK</p>
+                <p class="lingo">JAPANESE</p>
+                <p class="lingo-level">Native Speaker</p>
+                <p class="lingo-level">Intermediate</br>Conversational</p>
+                <p class="lingo-level">Once conversational,</br>but it’s been a long time</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <p>Each project has a page with more screenshots and information
+                about how I built the site, what problems I had to solve and what future plans I have for it.</p>
+        
+            <div class="project-box">
+                <img>
+                <h3>Chingu Hackathon</h3>
+                <p>Working with two friends to build a desktop and mobile dashboard for Santa, so he can monitor his progress on Christmas Eve.</p>
+                <p>React, Vanilla JS & CSS</p>
+                <p><a href=""></a>READ MORE ></p>
+            </div>
+        
+            <div class="project-box">
+                <img>
+                <h3>Ancient Greek Theatres</h3>
+                <p>A personal project to practice mobile-first web design. Vanilla JavaScript for switching tabs and a gallery. Working on a map API. </p>
+                <p>Vanilla JS & CSS</p>
+                <p><a href=""></a>READ MORE ></p>
+            </div>
+
+            <div class="project-box">
+                <img>
+                <h3>Nokia covers with Snake</h3>
+                <p>As a kid I really wanted the Nokia 5510 with removable covers and snake. I wasn’t allowed it, so built it myself. </p>
+                <p>Vanilla JS & CSS</p>
+                <p><a href=""></a>READ MORE ></p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer mainfooter-link">
+        <!-- footer in two pieces. easier to move social around -->
+
+        <div>
+            <p class="footer-text">Chris W. Logothetis</p>
+            <p class="footer-fineprint"><a href="mailto:cwlogo@pm.me" class="nav-link">cwlogo@pm.me</a></p>
+        </div>
+
+        <ul class="social-list">
+            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-github"></i></a></li>
+        </ul>
+
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
