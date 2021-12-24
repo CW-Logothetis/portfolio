@@ -21,6 +21,7 @@
 
 <body>
     <!-- nav bar doesn't need to be in grid, a bit overkill, but keeps everything below aligned properly -->
+    <div class="header-background">
     <header class="header header-home main-grid">
         <div class="header-content">
             <!-- insert logo later, just text for MVP -->
@@ -31,8 +32,8 @@
             <nav class="nav">
                 <button aria-label="Close navigation" class="close-nav">&times;</button>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html#about-me" class="nav-link current">about me</a></li>
-                    <li class="nav-item"><a href="index.html#projets" class="nav-link current">projects</a></li>
+                    <li class="nav-item"><a href="index.html#about-me" class="nav-link">about me</a></li>
+                    <li class="nav-item"><a href="index.html#projets" class="nav-link">projects</a></li>
                     <li class="nav-item"><a href="mailto:cwlogo@pm.me" class="nav-link">cwlogo@pm.me</a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
@@ -41,6 +42,7 @@
             </nav>
         </div>
     </header>
+    </div>
 
     <main>
         <section class="hero main-grid">
@@ -62,22 +64,28 @@
             
         </section>
 
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>I’m a front-end developer and, having worked in the UK, Greece and Japan, I’m in my element working with people from around the globe.</p>
-            <p>Once upon a time, I spent seven years as a lawyer in London, but I really love building stuff and the law just wasn’t for me.</p>
-            <p>So I first built and ran my own business, and it was there that I fell in love with design and UX, then code and UI.</p>
-            <img src="" alt="">
+    <div class="container-me">
+        <section class="main-grid">
+            <div class="about-me main-grid">
+                <div class="about-me--text">
+                    <h2 class="about-me--heading">About Me</h2>
+                    <p>I’m a front-end developer and, having worked in the UK, Greece and Japan, I’m in my element working with people from around the globe.</p>
+                    <p>Once upon a time, I spent seven years as a lawyer in London, but I really love building stuff and the law just wasn’t for me.</p>
+                    <p>So I first built and ran my own business, and it was there that I fell in love with design and UX, then code and UI.</p>
+                </div>
+                    <!-- <img class="about-me--image" src="" alt=""> -->
+                <div class="circle"></div>
+            </div>
         </section>
 
-        <section class="skills">
-            <div class="stack">
-                <a href="#" class="stack-link"><i class="fab fa-js"></i></a>
-                <a href="#" class="stack-link"><i class="fab fa-html5"></i></a>
-                <a href="#" class="stack-link"><i class="fab fa-css3-alt"></i></a>
-                <img src="img/tailwindcss-mark.svg" class="stack-link" alt="">
-                <a href="#" class="stack-link"><i class="fab fa-figma"></i></a>
-                <a href="#" class="stack-link"><i class="fab fa-git-alt"></i></a>
+        <section class="skills main-grid">
+            <div class="stack-flex">
+                <i class="stack-link js fab fa-js"></i></a>
+                <i class="stack-link html5 fab fa-html5"></i></a>
+                <i class="stack-link css3 fab fa-css3-alt"></i></a>
+                <img src="img/tailwindcss-mark.svg" class="stack-link tailwind" alt="">
+                <i class="stack-link figma fab fa-figma"></i></a>
+                <i class="stack-link git fab fa-git-alt"></i></a>
             </div>
 
             <div class="languages-grid">
@@ -89,34 +97,39 @@
                 <p class="lingo-level">Once conversational,</br>but it’s been a long time</p>
             </div>
         </section>
+    </div>    
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Each project has a page with more screenshots and information
-                about how I built the site, what problems I had to solve and what future plans I have for it.</p>
-        
-            <div class="project-box">
-                <img>
+        <section class="projects main-grid">
+            <div class="projects--heading">
+                <h2 class="projects--h">Projects</h2>
+                <p>Each project has a page with more screenshots and information
+                    about how I built the site, what problems I had to solve and what future plans I have for it.</p>
+            </div>  
+            <div class="projects--box chingu">
+                <img src="img/chingu-landscape-app.png" class="product-image" alt="">
                 <h3>Chingu Hackathon</h3>
                 <p>Working with two friends to build a desktop and mobile dashboard for Santa, so he can monitor his progress on Christmas Eve.</p>
-                <p><strong>React, Vanilla JS & CSS</strong></p>
-                <p><a href=""></a><strong>READ MORE ></strong></p>
+                
+                <div class="projects--flex-btm-row">
+                    <p><strong>React, Vanilla JS & CSS</strong></p>
+                    <p><a href=""><strong>READ MORE ></strong></a></p>
+                </div>
             </div>
         
-            <div class="project-box">
-                <img>
+            <div class="projects--box theatres">
+                <img src="img/theatres-landscape.png" class="product-image" alt="">
                 <h3>Ancient Greek Theatres</h3>
                 <p>A personal project to practice mobile-first web design. Vanilla JavaScript for switching tabs and a gallery. Working on a map API. </p>
                 <p><strong>Vanilla JS & CSS</strong></p>
-                <p><a href=""></a><strong>READ MORE ></strong></p>
+                <p><a href=""><strong>READ MORE ></strong></a></p>
             </div>
 
-            <div class="project-box">
-                <img>
-                <h3>Nokia covers with Snake</h3>
+            <div class="projects--box snake">
+                <img src="img/snake-landscape.png" class="product-image" alt="">
+                <h3>Snake on the Nokia 5510</h3>
                 <p>As a kid I really wanted the Nokia 5510 with removable covers and snake. I wasn’t allowed it, so built it myself. </p>
                 <p><strong>Vanilla JS & CSS</strong></p>
-                <p><a href=""></a><strong>READ MORE ></strong></p>
+                <p><a href=""><strong>READ MORE ></strong></a></p>
             </div>
 
         </section>
