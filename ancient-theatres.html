@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+
+    <!-- link to CSS -->
+    <link href="style.css" rel="stylesheet">
+
+    <title>Portfolio of Chris W. Logothetis</title>
+</head>
+
+<body>
+    <!-- nav bar doesn't need to be in grid, a bit overkill, but keeps everything below aligned properly -->
+    <div class="header-background">
+    <header class="header header-home main-grid">
+        <div class="header-content">
+            <!-- insert logo later, just text for MVP -->
+            <a href="index.html" class="logo-link">Chris W. Logothetis</a>
+            
+            <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+
+            <nav class="nav">
+                <button aria-label="Close navigation" class="close-nav">&times;</button>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html#about-me" class="nav-link">about me</a></li>
+                    <li class="nav-item"><a href="index.html#projects" class="nav-link">projects</a></li>
+                    <li class="nav-item"><a href="mailto:cwlogo@pm.me" class="nav-link">cwlogo@pm.me</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </div>
+
+    <main>
+
+        <!--- INTRO --->
+
+        <section class="introduction main-grid">
+            <div>
+                <h1 class="intro--title">Ancient Greek Theatres</h1>
+                <p class="intro--para">As I’m a bit of a history nut, I’ve visited quite a few of the archaeological sites in Greece and the southern Balkans. So when I was thinking of a personal project to test my Figma and responsive design skills, I thought th would be a good fit. Especially as I have my own photographs to use.</p>            
+                <p class="intro--para">There are over a hundred Greek and then Roman theatres, so I just selected five from the Greek period, but nipped over the border into modern day Albania to show two that are relatively unknown.</p>            
+                <p class="intro--para">Note: as the aim here was to practice web design, the pages use placeholder or duplicated text.</p>
+             </div>
+            <div class="intro--stack-grid">
+                <p>Stack:</p>
+                <p>Vanilla JS - CSS - Git/Github</p>
+                <p>Design:</p>
+                <p>Figma</p>
+                <p>Live Site:</p>
+                <p>Netlify</p>
+            </div>
+        </section>
+
+        <!--- HERO --->
+
+        <img src="" class="" alt="">
+
+        <!--- PROJECT REQUIREMENTS --->
+
+        <section id="p-req" class="project-req main-grid">
+
+                <h2>Project Requirements</h2>
+                <div class="pro-req stage1">
+                    <h3>First stage - MVP:</h3>
+                    <ul>
+                        <li>Home page</li>
+                        <li>Separate page for each of the theatres</li>
+                        <li>Each theatre to have a tab menu to toggle between:</li>
+                            <li>brief history</li>
+                            <li>how to get there</li>
+                            <li>photo gallery</li>
+                        <li>Work on mobile and any screen size or orientation</li>
+                        <li>Meet accessibility standards</li>
+                    </ul>
+                </div>
+                <div class="pro-req stage2">
+                    <h3>Second stage:</h3>
+                    <ul>
+                        <li>A map of the region showing only the names of the theatres, which can be clicked to visit the appropriate page</li>
+                        <li>For each theatre, connect to a map API to find driving directions</li>
+                    </ul>
+                </div>
+
+                    <img src="" class="pro-req--image" alt="">
+                    <img src="" class="pro-req--image" alt="">
+                    <img src="" class="pro-req--image" alt="">
+
+        </section>
+
+        <!--- STACK TOOLS --->
+
+
+        <!--- PROCESS --->
+
+        <section class="process main-grid">
+            <h2 class="process--heading">Process</h2>
+
+            <div class="process-step-box main-grid">
+                <div class="step-bubble-l bubble-white">
+                    <p class="process--para">With Figma, I laid out detailed plans for the home page and then a template to be used for each of the theatres.</p>
+                    <p class="process--para">I started mobile first, then adjusted sizes and also layout of element for tablet and laptop/desktop with landscape orientation.</p>
+                </div>
+                <div class="step-bubble-r bubble-yellow">
+                    <img src="img/chingu-landscape-app.png" class="product-image" alt="">
+                </div>
+            </div>
+            
+            <div class="process-step-box main-grid">
+                <div class="step-bubble-l bubble-orange">
+                    <img src="img/chingu-landscape-app.png" class="product-image" alt="">
+                </div>
+                <div class="step-bubble-r bubble-white">
+                    <p class="process--para">The home page was relatively straightforward, with a hero image, some introductory text and then a timeline.</p>
+                    <p class="process--para">Everything is set out with CSS Grid, with empty columns for margins and easy alignment.</p>
+                    <p class="process--para">The timeline’s dividing line is a border to the right of the dates. It needed a little adjustment with different media queries.</p>
+                </div>
+            </div>
+
+            <div class="process-step-box main-grid">
+                <div class="step-bubble-l bubble-white">
+                    <p class="process--para">The template for the theatre could have had a long scroll, but to use a little JavaScript I added a tab menu.</p>
+                </div>
+                <div class="step-bubble-r bubble-blue">
+                    <img src="img/chingu-landscape-app.png" class="product-image" alt="">
+                </div>
+            </div>
+
+            <div class="process-step-box main-grid">
+                <div class="step-bubble-l bubble-yellow">
+                    <img src="img/chingu-landscape-app.png" class="product-image" alt="">
+                </div>
+                <div class="step-bubble-r bubble-white">
+                    <p class="process--para">The photo gallery allowed me to use a little more JavaScript. And in the future I’ll add a lightbox to enlarge the photos; on mobile they’re too small.</p>
+                    <p class="process--para">The thumbnails are in a grid so that they’ll wrap on smaller screens.</p>
+                </div>
+            </div>
+
+        </section>
+    </div>    
+
+        <!--- BUGS --->
+
+        <section id="bugs" class="bugs main-grid">
+                <h2 class="bugs--h">Bugs and Solutions</h2>
+                <ul>
+                    <li>Each project has a page with more screenshots and information</li>
+                    <li>about how I built the site, what problems I had to solve and what future plans I have for it.</li>
+                </ul> 
+        </section>
+
+
+         <!--- NEXT STEPS --->
+        <section class="next-steps main-grid">
+            <h2 class="next-steps--heading">Next Steps</h2>
+
+            <div class="process-step-box main-grid">
+                <div class="step-bubble-l bubble-white">
+                    <p class="process--para">I have a map of the region and I intend to place clickable links on the names of the theatres.</p>
+                    <p class="process--para">The map allows people to get a sense of each theatre’s location in relation to the others, and also see which one is close to an aiport or place they may be visiting.</p>
+                </div>
+                <div class="step-bubble-r bubble-orange">
+                    <img src="img/chingu-landscape-app.png" class="product-image" alt="">
+                </div>
+            </div>
+            
+            <div class="process-step-box main-grid">
+                <div class="step-bubble-l bubble-blue">
+                    <img src="img/chingu-landscape-app.png" class="product-image" alt="">
+                </div>
+                <div class="step-bubble-r bubble-white">
+                    <p class="process--para">I’ve used MapBox before to design maps, but not its API. </p>
+                    <p class="process--para">Customising map colours and labels, plus enabling users to plan a trip by car would be a great addition.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer mainfooter-link">
+        <!-- footer in two pieces. easier to move social around -->
+
+        <div>
+            <p class="footer-text">Chris W. Logothetis</p>
+            <p><a href="mailto:cwlogo@pm.me" class="footer-email">cwlogo@pm.me</a></p>
+        </div>
+
+        <ul class="social-list">
+            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-github"></i></a></li>
+        </ul>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
