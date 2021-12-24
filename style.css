@@ -1,0 +1,138 @@
+* {box-sizing: border-box;}
+
+html {
+    font-size: 0.625rem;  
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    line-height: 1.5; /* the default of 1 is too crushed. Start at 1.5 and play around*/
+}
+
+/*good idea on all sites to default all images to this. And display:block can solve an occasional spacing issue.
+But can also cause others, so keep in mind*/
+img {
+    max-width: 100%;
+    width: 100px;
+}
+
+/* ============================================================================================
+===============================================================================================
+    TYPOGRAPHY       ==========================================================================
+===============================================================================================
+=============================================================================================== */
+
+
+h1, h2, .hero-js, .hero-html, .hero-css, strong, .lingo {
+    /* Good idea to stop you later typing 'bold' and forgetting it only goes up by 100pts */
+    font-weight: 700;
+}
+
+h3, .semibold {
+    font-weight: 600;
+}
+
+h1, .hero-js, .hero-html, .hero-css {
+    font-size: 12rem;
+    line-height: 18.8rem;
+}
+
+.hero-js, .hero-html, .hero-css {
+    letter-spacing: -6px;
+    text-align: right;
+}
+
+.stroke-text{
+    -webkit-text-fill-color:transparent;
+  }
+
+.hero-js {
+    -webkit-text-stroke: 8px #BCA736;
+}
+
+.hero-html {
+    -webkit-text-stroke: 8px #DD4B25;
+}
+
+.hero-css{
+    -webkit-text-stroke: 8px #254BDD;
+}
+
+h2 {
+    font-size: 8rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+
+
+/* footer - on every page, so general layout */
+
+.footer {
+    background: #404040;
+    padding: 4em 0;
+    text-align: center;
+
+    grid-template-areas:
+        ". social ."
+        ". main ."; 
+}
+
+.footer-main,
+.social-list {
+    grid-column: 2 / -2;
+}
+
+.footer-text,
+.footer-email {
+    color: #fff;
+    opacity: .8;
+}
+
+.footer-text {
+    font-size: 1.6rem;
+}
+
+.footer-main {
+    grid-area: main;
+}
+
+.footer-email {
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin-top: 4em;
+}
+
+.footer-email:hover, .footer-email:focus, .footer-email:active {
+    color: #cfd8f8;
+    opacity: .2;
+    cursor: pointer;
+}
+
+.social-list {
+    grid-area: social;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3.2em;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 2.8rem;
+    margin: 0 .8em;
+}
+
+.social-link:hover {
+    color: #777;
+}
