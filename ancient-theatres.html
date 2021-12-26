@@ -48,21 +48,21 @@
 
         <!--- INTRO --->
 
-        <section id="introduction" >
+        <section id="introduction" class="intro">
            
-            <div class="introduction main-grid">
+            <div class="main-grid">
                 <h1 class="intro--title">Ancient Greek Theatres</h1>
                 <p class="intro--para">As I’m a bit of a history nut, I’ve visited quite a few of the archaeological sites in Greece and the southern Balkans. So when I was thinking of a personal project to test my Figma and responsive design skills, I thought this would be a good fit. Especially as I have my own photographs to use.</p>            
                 <p class="intro--para">There are over a hundred Greek and then Roman theatres, so I just selected five from the Greek period, but nipped over the border into modern day Albania to show two that are relatively unknown.</p>            
                 <p class="intro--para">Note: as the aim here was to practice web design, the pages use placeholder or duplicated text.</p>
             </div>
 
-            <div class="introduction main-grid">
-                <p class="intro--para-col-1">Stack:</p>
+            <div class="intro--stack main-grid">
+                <p class="intro--para-col-1"><strong>Stack:</strong></p>
                 <p class="intro--para-col-2">Vanilla JS - CSS - Git/Github</p>
-                <p class="intro--para-col-1">Design:</p>
+                <p class="intro--para-col-1"><strong>Design:</strong></p>
                 <p class="intro--para-col-2">Figma</p>
-                <p class="intro--para-col-1">Live Site:</p>
+                <p class="intro--para-col-1"><strong>Live Site:</strong></p>
                 <p class="intro--para-col-2">Netlify</p>
             </div>
         </section>
@@ -74,11 +74,11 @@
 
         <!--- PROJECT REQUIREMENTS --->
 
-        <section id="p-req" class="project-req main-grid">
+        <section id="p-req" class="p-req main-grid">
 
-                <h2 class="p-req--para">Project Requirements</h2>
+                <h2 class="p-req--title">Project Requirements</h2>
                 <div class="pro-req stage1 p-req--para">
-                    <h3>First stage - MVP:</h3>
+                    <h3 class="p-req--subheading">First stage - MVP:</h3>
                     <ul>
                         <li>Home page</li>
                         <li>Separate page for each of the theatres</li>
@@ -90,7 +90,7 @@
                         <li>Meet accessibility standards</li>
                     </ul>
                 </div>
-                <div class="pro-req stage2 p-req--para">
+                <div class="p-req stage2 p-req--para">
                     <h3>Second stage:</h3>
                     <ul>
                         <li>A map of the region showing only the names of the theatres, which can be clicked to visit the appropriate page</li>
@@ -98,9 +98,9 @@
                     </ul>
                 </div>
 
-                    <img src="img/chingu-landscape-app.png" class="pro-req--image img-l" alt="">
-                    <img src="img/chingu-landscape-app.png" class="pro-req--image img-c" alt="">
-                    <img src="img/chingu-landscape-app.png" class="pro-req--image img-r" alt="">
+                    <!-- <img src="img/chingu-landscape-app.png" class="p-req--image img-l" alt=""> -->
+                    <img src="img/chingu-landscape-app.png" class="p-req--image img-c" alt="">
+                    <!-- <img src="img/chingu-landscape-app.png" class="p-req--image img-r" alt=""> -->
 
         </section>
 
@@ -158,19 +158,19 @@
         <!--- BUGS --->
 
         <section id="bugs" class="bugs main-grid">
-                <h2 class="bugs--h">Bugs and Solutions</h2>
-                <ul>
-                    <li>Each project has a page with more screenshots and information</li>
-                    <li>about how I built the site, what problems I had to solve and what future plans I have for it.</li>
-                </ul> 
+                <h2 class="bugs--heading">Bugs and Solutions</h2>
+                <div class="bugs--para">
+                    <p>Hero images need compressing.</p>
+                    <p>It’s difficult using text over hero images that don’t have large light or dark areas. And the image moves a lot when it resizes for different screens. Quick fix will be enlarging text and lowing the opacity of the hero images. </p>
+                </div>
         </section>
 
 
          <!--- NEXT STEPS --->
         <section class="next-steps main-grid">
-            <h2 class="next-steps--heading">Next Steps</h2>
+            <h2 class="process--heading">Next Steps</h2>
 
-            <div class="process-step-box main-grid">
+            <div class="process--step process--grid">
                 <div class="step-bubble-l bubble-white">
                     <p class="process--para">I have a map of the region and I intend to place clickable links on the names of the theatres.</p>
                     <p class="process--para">The map allows people to get a sense of each theatre’s location in relation to the others, and also see which one is close to an aiport or place they may be visiting.</p>
@@ -180,7 +180,7 @@
                 </div>
             </div>
             
-            <div class="process-step-box main-grid">
+            <div class="process--step process--grid">
                 <div class="step-bubble-l bubble-blue">
                     <img src="img/chingu-landscape-app.png" class="process--image" alt="">
                 </div>

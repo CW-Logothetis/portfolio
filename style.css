@@ -98,6 +98,7 @@ h3 {
 
 p {
     font-size: 1.6rem;
+    line-height: 180%;
 }
 
 a {
@@ -502,7 +503,7 @@ a {
 }
 
 .product-image {
-    max-width: 85%;
+    max-width: 100%;
     width: 50rem;
     margin: 0 auto 2em auto;
     border-radius: 7px;
@@ -523,7 +524,7 @@ a {
 =============================================================================================================== */
 
 .gray-bg {
-    background-color: #e0e0e0;
+    background-color: #ececec;
 }
 
 
@@ -531,30 +532,40 @@ a {
     Intro
 ================================================================ */
 
+.intro {
+    margin: 6em auto;
+}
 
 .intro--title {
     grid-column: 2 / -2;
 
-    margin: 0;
+    margin: 0 0 1em 0;
     padding: 0;
 
-    font-size: 3.6rem;
+    font-size: 5rem;
     text-shadow: none;
+    text-align: center;
+}
+
+.intro--stack {
+    margin-top: 2em;
 }
 
 .intro--para {
     grid-column: 2 / -2;
 
-    margin: 0;
+    margin: 0 0 1.5em 0;
     padding: 0;
 }
 
 .intro--para-col-1 {
     grid-column: 2/3;
+    margin: 0.5em 0;
 }
 
 .intro--para-col-2 {
     grid-column: 4/7;
+    margin: 0.5em 0;
 }
 
 /* ============================================================================================================
@@ -563,9 +574,9 @@ a {
 
 .project-hero {
     grid-column: 2/-2;
-    width: 80%;
-    max-width: 900px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 8em auto;
     box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
 }
 
@@ -573,9 +584,21 @@ a {
     Project Requirements
 ================================================================ */
 
-.project-req {
-    background: linear-gradient(96.01deg, #EACD37 13.99%, rgba(234, 205, 55, 0.67) 107.35%);
+.p-req {
+    /* background: linear-gradient(96.01deg, #EACD37 13.99%, rgba(234, 205, 55, 0.67) 107.35%); */
+    background-color: #EACD37;
+    margin-bottom: 5em;
+    padding-bottom: 10em;
+}
 
+.p-req--title {
+    grid-column: 2 / -2;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.p-req--subheading {
+    margin: 0 0 1em 0;
 }
 
 .p-req--para {
@@ -585,41 +608,54 @@ a {
     padding: 0;
 }
 
-.pro-req--image {
-    width: 200px;
+.p-req--image {
+    width: 400px;
     max-width: 900px;
     margin: 0 auto;
     box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
 }
 
+.p-req  li {
+    font-size: 1.6em;
+}
+
 .img-l {
     grid-row: 3;
-    grid-column: 9/10
+    grid-column: 8/9;
+    z-index: 1;
 }
 
 .img-c {
     grid-row: 2;
-    grid-column: 10;
+    grid-column: 8;
     align-self: end;
+    z-index: 10;
+    
 }
 
 .img-r {
     grid-row: 3;
-    grid-column: 11/12
+    grid-column: 10/11;
+    z-index: 100;
 }
 
 /* ============================================================================================================
-    Project Requirements
+    Process
 ================================================================ */
+
+.process {
+    margin-bottom: 5em;
+}
 
 .process--heading {
     grid-column: 2 / -2;
 
-    margin: 0;
+    margin: 0 0 1em 0;
     padding: 0;
 
-    font-size: 3.6rem;
+    /* font-size: 3.6rem; */
     text-shadow: none;
+    text-align: center;
 }
 
 .process--step {
@@ -629,7 +665,7 @@ a {
     display: flex;
     
 
-    margin: 0;
+    margin: 0 0 10em 0;
     padding: 0;
 }
 
@@ -685,14 +721,53 @@ a {
 .process--para {
     /* width: 60%; */
     /* grid-column: 3; */
-    /* margin: 2em auto; */
-    padding: 0;
+    margin: 0 2em;
+    padding: 1em 0;
 }
 
 .process--image {
     width: 75%;
-    margin: 0em auto;
+    margin: 4em auto;
     border-radius: 7px;
     box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
+}
 
+/* ============================================================================================================
+    Process
+================================================================ */
+
+.bugs {
+    align-content: center;
+    margin-bottom: 10em 0;
+    padding: 10em 0;
+    background-color: #fff;
+    min-height: 50vh;
+}
+
+.bugs--heading {
+    grid-column: 2 / -2;
+
+    margin: 0;
+    padding: 0;
+
+    /* font-size: 3.6rem; */
+    text-align: center;
+    text-shadow: none;
+}
+
+.bugs--para {
+    grid-column: 4 / -4;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+.bugs li {
+    font-size: 1.6em;
+}
+
+.next-steps {
+    padding: 10em 0;
 }
