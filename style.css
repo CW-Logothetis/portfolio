@@ -399,38 +399,102 @@ a {
     align-items: flex-end;
 }
 
-.animate {
+.fade-in-out {
+    opacity: 1;
+    animation: fadein 4s linear 0s infinite;
+    animation-delay: 2s;
+}
+
+
+@keyframes fadein {
+  0%,100% { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+.front-animate {
     display: inline;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-.animate:before {
-    content: 'JavaScript';
-    -webkit-animation-name: animate;
-    -webkit-animation-duration: 2s;
-    animation-name: animate;
-    animation-duration: 2s;
-    animation-delay: 1s;
+.front-animate:before {
+    content: 'FRONT';
+    -webkit-animation-name: front-animate;
+    -webkit-animation-duration: 8s;
+    animation-name: front-animate;
+    animation-duration: 8s;
+    animation-delay: 2.5s;
     animation-iteration-count: infinite;
 }
 
-@keyframes animate {
+@keyframes front-animate {
     0% {
-        content: 'hard-working';
-    }
-    25% {
-        content: 'tired';
+        content: 'FRONT';
     }
     50% {
-        content: 'coffee-addicted';
-    }
-    75% {
-        content: 'fast-paced';
+        content: 'JavaScript';
     }
     100% {
-        content: 'hard-working';
+        content: 'FRONT';
+    }
+}
+
+.end-animate {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.end-animate:before {
+    content: 'END';
+    -webkit-animation-name: end-animate;
+    -webkit-animation-duration: 8s;
+    animation-name: end-animate;
+    animation-duration: 8s;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes end-animate {
+    0% {
+        content: 'END';
+    }
+    50% {
+        content: 'HTML5';
+    }
+    100% {
+        content: 'END';
+    }
+}
+
+.dev-animate {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.dev-animate:before {
+    content: 'dev';
+    -webkit-animation-name: dev-animate;
+    -webkit-animation-duration: 8s;
+    animation-name: dev-animate;
+    animation-duration: 8s;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dev-animate {
+    0% {
+        content: 'dev';    
+    }
+    50% {
+        content: 'CSS3';
+    }
+    100% {
+        content: 'dev';
     }
 }
 
