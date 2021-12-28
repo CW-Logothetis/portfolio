@@ -372,7 +372,7 @@ a {
 /* --- !!! NOTE: Hero grid column and row details are in typography above !!! --- */
 
 .hero {
-    height: 80vh;
+    height: 85vh;
     /* margin: 3em auto 10em auto; */
     display: grid;
     grid-template-rows: repeat(4, auto);
@@ -401,8 +401,11 @@ a {
 
 .fade-in-out {
     opacity: 1;
+    -webkit-opacity: 1;
     animation: fadein 4s linear 0s infinite;
+    -webkit-animation: fadein 4s linear 0s infinite;
     animation-delay: 2s;
+    -webkit-animation-delay: 2s;
 }
 
 
@@ -425,7 +428,9 @@ a {
     animation-name: front-animate;
     animation-duration: 8s;
     animation-delay: 2.7s;
+    -webkit-animation-delay: 2.7s;
     animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes front-animate {
@@ -454,7 +459,9 @@ a {
     animation-name: end-animate;
     animation-duration: 8s;
     animation-delay: 2.7s;
+    -webkit-animation-delay: 2.7s;
     animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes end-animate {
@@ -483,7 +490,9 @@ a {
     animation-name: dev-animate;
     animation-duration: 8s;
     animation-delay: 2.7s;
+    -webkit-animation-delay: 2.7s;
     animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes dev-animate {
