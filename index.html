@@ -47,80 +47,99 @@
     <main>
         <section class="hero main-grid">
             
-            <p class="hero-js stroke-text">JavaScript</p>
+            <!-- <p class="hero-js stroke-text">JavaScript</p>
             <p class="hero-html stroke-text">HTML5</p>
             <h1 class="hero-title hi">Hi,</h1>
             <p class="hero-css stroke-text">CSS3</p>
             <h1 class="hero-title chris">I'm Chris</h1>
-            <h1 class="hero-title logothetis">Logothetis</h1>
+            <h1 class="hero-title logothetis">Logothetis</h1> -->
             
 
-            <!-- <h1 class="hero-title main-grid">
-                <span class="hi">Hi,</span>
-                <span class="chris">I'm Chris</span>
-                <span class="logothetis">Logothetis</span>
-            </h1> -->
+            
+                <div class="hero--name-flexbox">
+                    <h1 class="hero-title hi">Hi,</h1>
+                    <h1 class="hero-title chris">I'm</h1>
+                    <h1 class="hero-title chris">Chris</h1>
+                    <h1 class="hero-title logothetis">Logothetis</h1>
+                </div>
+
+                <div class="hero--stack-flexbox">
+                    <p class="hero-js stroke-text">JavaScript</p>
+                    <p class="hero-html stroke-text">HTML5</p>
+                    <p class="hero-css stroke-text">CSS3</p>
+                </div>
+            
             
             
         </section>
 
-    <div id="about-me" class="container-me">
-        <section class="main-grid">
-            <div class="about-me main-grid">
+    <section id="about" class="container-me">
+        
+        <div class="main-grid">
+
+            <div class="about-me about-grid">
                 <div class="about-me--text">
                     <h2 class="about-me--heading">About Me</h2>
                     <p>I’m a front-end developer and, having worked in the UK, Greece and Japan, I’m in my element working with people from around the globe.</p>
-                    <p>Once upon a time, I spent seven years as a lawyer in London, but I really love building stuff and the law just wasn’t for me.</p>
+                    <p>Once upon a time, I spent seven years as a lawyer in London, but my love for building stuff meant that the law wasn’t for me.</p>
                     <p>So I first built and ran my own business, and it was there that I fell in love with design and UX, then code and UI.</p>
                 </div>
                     <!-- <img class="about-me--image" src="" alt=""> -->
                 <!-- <div class="circle"></div> -->
             </div>
-        </section>
 
-        <section class="skills main-grid">
-            <div class="stack-flex">
-                <i class="stack-link js fab fa-js"></i></a>
-                <i class="stack-link html5 fab fa-html5"></i></a>
-                <i class="stack-link css3 fab fa-css3-alt"></i></a>
-                <img src="img/tailwindcss-mark.svg" class="stack-link tailwind" alt="">
-                <i class="stack-link figma fab fa-figma"></i></a>
-                <i class="stack-link git fab fa-git-alt"></i></a>
-            </div>
+            <div class="skills about-grid">
 
-            <div class="languages-grid">
-                <p class="lingo">ENGLISH</p>
-                <p class="lingo">GREEK</p>
-                <p class="lingo">JAPANESE</p>
-                <p class="lingo-level">Native Speaker</p>
-                <p class="lingo-level">Intermediate</br>Conversational</p>
-                <p class="lingo-level">Once conversational,</br>but it’s been a long time</p>
+                <div class="stack-flex">
+                    <i class="stack-link js fab fa-js"></i></a>
+                    <i class="stack-link html5 fab fa-html5"></i></a>
+                    <i class="stack-link css3 fab fa-css3-alt"></i></a>
+                    <img src="img/tailwindcss-mark.svg" class="stack-link tailwind" alt="">
+                    <i class="stack-link figma fab fa-figma"></i></a>
+                    <i class="stack-link git fab fa-git-alt"></i></a>
+                </div>
+                <div class="languages">
+                    <div class="en">
+                        <p class="language">ENGLISH</p>
+                        <p class="language-level">Native Speaker</p>
+                    </div>
+                    <div class="gr">
+                        <p class="language">GREEK</p>
+                        <p class="language-level">Intermediate</br>Conversational</p>
+                    </div>
+                    <div class="jp">
+                        <p class="language">JAPANESE</p>
+                        <p class="language-level">Once conversational,</br>but it’s been a long time</p>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>    
+        </div>
+    </section>    
 
         <section id ="projects" class="projects main-grid">
             <div class="projects--heading">
                 <h2 class="projects--h">Projects</h2>
                 <p>Each project has a page with more screenshots and information
-                    about how I built the site, what problems I had to solve and what future plans I have for it.</p>
+                    about how I built the site, what problems I had to solve and my future plans for it.</p>
             </div>  
             <div class="projects--box chingu">
                 <img src="img/chingu-landscape-app.png" class="product-image" alt="">
                 <h3>Chingu Hackathon</h3>
                 <p>Working with two friends to build a desktop and mobile dashboard for Santa, so he can monitor his progress on Christmas Eve.</p>
+                <p class="projects--box-stack-p"><strong>React, Vanilla JS & CSS</strong></p>
+                <p><a href="chingu.html"><strong>READ MORE ></strong></a></p>
                 
-                <div class="projects--flex-btm-row">
+                <!-- <div class="projects--flex-btm-row">
                     <p><strong>React, Vanilla JS & CSS</strong></p>
                     <p><a href="ancient-theatres.html"><strong>READ MORE ></strong></a></p>
-                </div>
+                </div> -->
             </div>
         
             <div class="projects--box theatres">
                 <img src="img/theatres-landscape.png" class="product-image" alt="">
                 <h3>Ancient Greek Theatres</h3>
                 <p>A personal project to practice mobile-first web design. Vanilla JavaScript for switching tabs and a gallery. Working on a map API. </p>
-                <p><strong>Vanilla JS & CSS</strong></p>
+                <p class="projects--box-stack-p"><strong>Vanilla JS & CSS</strong></p>
                 <p><a href="ancient-theatres.html"><strong>READ MORE ></strong></a></p>
             </div>
 
@@ -128,8 +147,8 @@
                 <img src="img/snake-landscape.png" class="product-image" alt="">
                 <h3>Snake on the Nokia 5510</h3>
                 <p>As a kid I really wanted the Nokia 5510 with removable covers and snake. I wasn’t allowed it, so built it myself. </p>
-                <p><strong>Vanilla JS & CSS</strong></p>
-                <p><a href=""><strong>READ MORE ></strong></a></p>
+                <p class="projects--box-stack-p"><strong>Vanilla JS & CSS</strong></p>
+                <p><a href="snake.html"><strong>READ MORE ></strong></a></p>
             </div>
 
         </section>
