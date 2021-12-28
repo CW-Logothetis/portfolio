@@ -424,8 +424,8 @@ a {
 .front-animate:before {
     content: 'FRONT';
     -webkit-animation-name: front-animate;
-    -webkit-animation-duration: 8s;
     animation-name: front-animate;
+    -webkit-animation-duration: 8s;
     animation-duration: 8s;
     animation-delay: 2.7s;
     -webkit-animation-delay: 2.7s;
@@ -434,6 +434,18 @@ a {
 }
 
 @keyframes front-animate {
+    0% {
+        content: 'FRONT';
+    }
+    50% {
+        content: 'JavaScript';
+    }
+    100% {
+        content: 'FRONT';
+    }
+}
+
+@-webkit-keyframes front-animate {
     0% {
         content: 'FRONT';
     }
@@ -476,6 +488,18 @@ a {
     }
 }
 
+@-webkit-keyframes end-animate {
+    0% {
+        content: 'END';
+    }
+    50% {
+        content: 'HTML5';
+    }
+    100% {
+        content: 'END';
+    }
+}
+
 .dev-animate {
     display: inline;
     margin: 0;
@@ -496,6 +520,18 @@ a {
 }
 
 @keyframes dev-animate {
+    0% {
+        content: 'dev';    
+    }
+    50% {
+        content: 'CSS3';
+    }
+    100% {
+        content: 'dev';
+    }
+}
+
+@-webkit-keyframes dev-animate {
     0% {
         content: 'dev';    
     }
