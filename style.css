@@ -329,8 +329,8 @@ a {
 /* --- !!! NOTE: Hero grid column and row details are in typography above !!! --- */
 
 .hero {
-    height: 80vh;
-    margin: 3em auto 10em auto;
+    /* height: 80vh; */
+    /* margin: 3em auto 10em auto; */
 }
 
 
@@ -360,7 +360,7 @@ a {
 .about-me--text {
     display: flex;
     flex-direction: column;
-    grid-column: 3 / 8;
+    grid-column: 3 / -3;
 }
 
 .about-me--text p {
