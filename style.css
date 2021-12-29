@@ -1317,21 +1317,21 @@ a:focus {
     grid-row: 3;
     box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
 
-    background: linear-gradient(180deg, rgba(37, 75, 221, 0.2) 0%, rgba(37, 75, 221, 0) 100%);
+    background: linear-gradient(180deg, rgba(132, 146, 202, 0.2) 0%, rgba(37, 75, 221, 0) 100%);
 }
 
 .theatres {
     grid-column: 2 / -2;
     grid-row: 4;
     box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
-    background: linear-gradient(180deg, rgba(234, 205, 55, 0.2) 0%, rgba(234, 205, 55, 0) 100%);
+    background: linear-gradient(180deg, rgba(206, 198, 156, 0.2) 0%, rgba(234, 205, 55, 0) 100%);
 }
 
 .snake {
     grid-column: 2 / -2;
     grid-row: 5;
     box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
-    background: linear-gradient(180deg, rgba(221, 75, 37, 0.1) 0%, rgba(221, 75, 37, 0) 100%);
+    background: linear-gradient(180deg, rgba(201, 167, 160, 0.2) 0%, rgba(221, 75, 37, 0) 100%);
 }
 
 .product-image {
