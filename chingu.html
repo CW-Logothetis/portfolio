@@ -88,19 +88,19 @@
                 <div class="stage1 p-req--para">
                     <h3 class="p-req--subheading">Minimum Hackathon Requirements</h3>
                     <ul>
-                        <li>Teams may use any language, framework, or libraries</li>
-                        <li>Create a UI/UX that's distinctive, fun, and appealing</li>
-                        <li>Responsive on mobile and any screen size or orientation, and meet accessibility standards</li>
+                        <li class="ul-18px">Teams may use any language, framework, or libraries</li>
+                        <li class="ul-18px">Create a UI/UX that's distinctive, fun, and appealing</li>
+                        <li class="ul-18px">Responsive on mobile and any screen size or orientation, and meet accessibility standards</li>
                     </ul>
                     <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
                     <ul>
-                        <li>calories accumulated so far</li>
-                        <li>homes that give milk & cookies</li>
-                        <li>homes that give carrots & tea</li>
-                        <li>current delivery speed (homes per second)</li>
-                        <li>homes visited</li>
-                        <li>homes remaining</li>
-                        <li>time remaining</li>
+                        <li class="ul-18px">calories accumulated so far</li>
+                        <li class="ul-18px">homes that give milk & cookies</li>
+                        <li class="ul-18px">homes that give carrots & tea</li>
+                        <li class="ul-18px">current delivery speed (homes per second)</li>
+                        <li class="ul-18px">homes visited</li>
+                        <li class="ul-18px">homes remaining</li>
+                        <li class="ul-18px">time remaining</li>
                     </ul>
                     <p>Santa requests a start and stop button.</p>
 
@@ -217,8 +217,8 @@
                 <p>The creators of the Hackathon decided that if Santa hit 5,000 calories, he would slow down until he ate more carrots (carrots reduced his calorie intake). When we ran the simulation we saw that their maths was wrong and Santa would never go below 5,000 calories. He would never deliever all the presents!</p>
                 <p>So we decided he needed:</p>
                 <ul>
-                    <li>a warning light to flash at 4,750 calories</li>
-                    <li>at this stage he should give the cookies to the reindeers until he burns more calories</li>
+                    <li class="ul-18px">a warning light to flash at 4,750 calories</li>
+                    <li class="ul-18px">at this stage he should give the cookies to the reindeers until he burns more calories</li>
                 </ul>
                 <p>But given that Santa needs to visit millions of homes in one night (24hours all in), he was still going too slow with the Chingu numbers. He must have a Hyper Drive and give something to the reindeers as a booster.</p>
                 <p>We added a ‘Fast Forward’ button to speed up the simulation. And whilst we were at it, a ‘Refresh’ button so that Santa and his elves could run simulations better.</p>
@@ -236,10 +236,10 @@
                 <div class="bugs--para">
                     <p>There were quite a few along the way:</p>
                     <ul class="text-align-left">
-                        <li>Tailwind is great, but I couldn’t add the background image. There is some conflict between CRA 4 and Tailwind 5. I tried running am alpha version of CRA 5, which is supposed to remedy this, but still didn’t have any success. It was quicker in the end to add the background image with old fashioned CSS</li>
-                        <li>Our fast-forward button needed clicking twice to start it. But it only needed clicking once to turn it off, and from then on it only needed clicking once to start it. As I’m new to React I couldn’t fathom the issue; the code was exactly the same for all the other buttons.</li>
-                        <li>Empty grid columns. I use these for padding along the sides, to keep all elements aligned. But I couldn’t control the minimum width with minmax(). They kept shrinking. I figured out I could add an empty character and set it’s colour to background colour. It’s a hacky solution; there must be a better way.</li>
-                        <li>Santa’s list for naughty and nice children. We were fetching random names from an API, and assigning them presents. The idea was that 10 children would be added to the screen, at the top of a list, every second as the dashboard updated. But of course the API won’t allow so many frequent requests. So one giant fetch needs doing, then (but we ran out of time) probably mapping 10 names each second to a new array for the dashboard.</li>
+                        <li class="ul-18px">Tailwind is great, but I couldn’t add the background image. There is some conflict between CRA 4 and Tailwind 5. I tried running am alpha version of CRA 5, which is supposed to remedy this, but still didn’t have any success. It was quicker in the end to add the background image with old fashioned CSS</li>
+                        <li class="ul-18px">Our fast-forward button needed clicking twice to start it. But it only needed clicking once to turn it off, and from then on it only needed clicking once to start it. As I’m new to React I couldn’t fathom the issue; the code was exactly the same for all the other buttons.</li>
+                        <li class="ul-18px">Empty grid columns. I use these for padding along the sides, to keep all elements aligned. But I couldn’t control the minimum width with minmax(). They kept shrinking. I figured out I could add an empty character and set it’s colour to background colour. It’s a hacky solution; there must be a better way.</li>
+                        <li class="ul-18px">Santa’s list for naughty and nice children. We were fetching random names from an API, and assigning them presents. The idea was that 10 children would be added to the screen, at the top of a list, every second as the dashboard updated. But of course the API won’t allow so many frequent requests. So one giant fetch needs doing, then (but we ran out of time) probably mapping 10 names each second to a new array for the dashboard.</li>
                     </ul>    
                 </div>
         </section>
