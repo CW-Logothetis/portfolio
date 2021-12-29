@@ -440,7 +440,7 @@ a:focus {
 
 .footer {
     background: #202020;
-    margin-top: 5em;
+    /* margin-top: 5em; */
     padding: 4em 0;
     text-align: center;
 }
@@ -1409,7 +1409,7 @@ a:focus {
 =============================================================================================================== */
 
 .gray-bg {
-    background-color: #ececec;
+    background-color: #fff;
 }
 
 
@@ -1427,42 +1427,138 @@ a:focus {
     margin: 1em 0 0.6em 0;
     padding: 0;
 
-    font-size: 9rem;
+    font-size: 4rem;
     text-shadow: none;
     text-align: center;
 }
 
 .intro--stack {
-    margin: 3em auto 12em auto;
+    margin: 3em auto 6em auto;
 }
 
 .intro--para {
-    grid-column: 3 / -3;
+    grid-column: 2 / -2;
 
     margin: 0 0 2em 0;
     padding: 0;
 }
 
 .intro--para-col-1 {
-    grid-column: 3/4;
+    grid-column: 2/5;
     margin: 0.5em 0;
 }
 
 .intro--para-col-2 {
-    grid-column: 5/8;
+    grid-column: 5/12;
     margin: 0.5em 0;
 }
+
+@media (min-width: 400px) {
+    
+    .intro--title{
+    font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 700px) {
+    
+    .intro--title {
+        margin: 1.5em 0 0.6em 0;
+        font-size: 5rem;
+    }
+
+    .intro--stack {
+        margin: 3em auto 8em auto;
+    }
+
+    .intro--para {
+        grid-column: 3 / -3;
+    }
+
+    .intro--para-col-1 {
+        grid-column: 3/5;
+    }
+
+
+}
+
+@media (min-width: 900px) {
+    
+    .intro--title{
+    font-size: 6.5rem;
+    }
+
+    .intro--para-col-1 {
+        grid-column: 3/4;
+        margin: 0.5em 0;
+    }
+
+    .intro--para-col-2 {
+        grid-column: 5/8;
+        margin: 0.5em 0;
+    }
+}
+
+@media (min-width: 1050px) {
+    
+    .intro--title{
+    grid-column: 3/-3;
+    margin: 0.75em 0 0.6em 0;
+    font-size: 7.5rem;
+    text-align: left;
+    }
+
+    .intro--para {
+        font-size: 1.8rem;
+    }
+
+    .intro--para-col-1 {
+        font-size: 2rem;
+    }
+
+    .intro--para-col-2 {
+        font-size: 2rem;
+    }
+
+    .intro--stack {
+        margin-bottom: 10em;
+    }
+
+}
+
+@media (min-width: 1800px) {
+    
+    .intro--title{
+    font-size: 9rem;
+    }
+
+}
+
+
 
 /* ============================================================================================================
     Hero
 ================================================================ */
 
 .project-hero {
-    grid-column: 1/-1;
+    grid-column: 2/-2;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto 20em auto;
+    margin: 0 auto 7em auto;
     box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
+}
+
+@media (min-width: 400px) {
+    .project-hero {
+        margin: 0 auto 10em auto;
+    }
+}
+
+@media (min-width: 1050px) {
+    .project-hero {
+        grid-column: 1/-1;
+        margin: 0 auto 20em auto;
+    }
 }
 
 /* ============================================================================================================
@@ -1544,7 +1640,9 @@ a:focus {
 ================================================================ */
 
 .process {
-    margin-bottom: 5em;
+    margin: 5em 0;
+    padding-bottom: 10em;
+    background: linear-gradient(180deg, rgba(250, 250, 249, 0.3) 0%, rgba(76, 99, 66, 0.4) 50%, rgba(15,23,11,0.1) 100%);
 }
 
 .process--heading {
@@ -1553,22 +1651,25 @@ a:focus {
     margin: 0 0 0 0;
     padding: 0;
 
-    font-size: 8rem;
+    font-size: 5rem;
     text-shadow: none;
     text-align: center;
 }
 
 .process--step {
-    grid-column: 1 / -1;
+    grid-column: 2 / -2;
     /* align-items: center; */
 
     display: flex;
+    flex-direction: column;
     
-    height: 60vh;
+    /* height: 60vh; */
 
     margin: 0 0 0em 0;
     padding: 0;
 }
+
+
 
 /* grid in grid instead of flexbox? */
 /* .process--grid {
@@ -1587,23 +1688,26 @@ a:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    padding: 2em;
+    /* width: 80%; */
+    min-height: 25em;
+    padding: 0.75em;
+    
     background-color: #fff;
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 20px 0 0;
     
 }
 
 .step-bubble-r {
-    grid-column: 7/13;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 50%;
-    padding: 2em;
+    /* width: 80%; */
+    min-height: 25em;
+    padding: 1em;
     background-color: #fff;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 0 20px 20px;
     /* justify-content: center; */
 }
 
@@ -1687,15 +1791,98 @@ a:focus {
     color: #2d5a12;
 }
 
+@media (min-width: 400px) {
+    .process--heading {
+        font-size: 7rem;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .process {
+        padding-bottom: 20em;
+        background: linear-gradient(180deg, rgba(250, 250, 249, 0.1) 0%, rgba(58, 77, 49, 0.2) 50%, rgba(15,23,11,0.2) 100%);
+    }
+
+    .process--heading {
+        font-size: 7rem;
+    }
+
+    .process--step {
+        flex-direction: row;
+    }
+
+    .step-bubble-l {
+        /* grid-column: 3/7; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        min-height: 0;
+        padding: 2em;
+        /* background-color: #fff; */
+        border-radius: 20px 0 0 20px;
+        
+    }
+    
+    .step-bubble-r {
+        grid-column: 7/13;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 50%;
+        min-height: 0;
+        padding: 2em;
+        /* background-color: #fff; */
+        border-radius: 0 20px 20px 0;
+        /* justify-content: center; */
+    }
+
+    .process--step p {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (min-width: 1050px) {
+
+    .process--heading {
+        font-size: 9rem;
+    }
+
+    .process--step p {
+        font-size: 2rem;
+    }
+
+    .step-bubble-r {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+    .step-bubble-l {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+    .process--image {
+        width: 85%;
+        margin: 1em auto;
+        border-radius: 7px;
+        box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
+    }
+
+}
+
 
 /* ============================================================================================================
-    Process
+    Bugs
 ================================================================ */
 
 .bugs {
     align-content: center;
-    margin: 20em auto 10em auto;
-    padding: 10em 0;
+    margin: 0em auto 2em auto;
+    padding: 5em 0;
     background-color: #fff;
     min-height: 50vh;
 }
@@ -1704,15 +1891,15 @@ a:focus {
     grid-column: 2 / -2;
 
     margin: 0;
+    margin-bottom: 0.5em;
     padding: 0;
 
-    /* font-size: 3.6rem; */
     text-align: center;
     text-shadow: none;
 }
 
 .bugs--para {
-    grid-column: 4 / -4;
+    grid-column: 2 / -2;
 
     margin: 0;
     padding: 0;
@@ -1720,10 +1907,61 @@ a:focus {
     text-align: center;
 }
 
+.bugs--para p {
+    margin-bottom: 4em;
+}
+
 .bugs li {
     font-size: 1.6em;
 }
 
+@media (min-width: 700px) {
+
+    .bugs--para {
+        grid-column: 3 / -3;
+    }
+
+    .bugs--para p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .bugs--heading {
+        margin-bottom: 0.5em;
+    }
+
+    .bugs--para p {
+        margin-bottom: 3em;
+        font-size: 2.4rem;
+    }
+}
+@media (min-width: 1050px) {
+    
+    .bugs{
+    min-height: 90vh;
+    }
+}
+
+/* ============================================================================================================
+    Next Steps
+================================================================ */
+
 .next-steps {
     padding: 10em 0;
+    background: linear-gradient(180deg, rgba(250, 250, 249, 0.3) 0%, rgba(76, 99, 66, 0.4) 50%, rgba(15,23,11,0.1) 100%);
+}
+
+@media (min-width: 700px) {
+    .next-steps {
+        background: linear-gradient(180deg, rgba(250, 250, 249, 0.1) 0%, rgba(58, 77, 49, 0.2) 50%, rgba(15,23,11,0.2) 100%);
+        padding-bottom: 15em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .next-steps {
+        padding-bottom: 20em;
+    }
 }
