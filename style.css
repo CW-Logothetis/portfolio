@@ -30,11 +30,11 @@ body {
 }
 
 .body-colour-theatre {
-    color: var(--theatre-blue-5);
+    color: var(--theatre-green-4);
 }
 
 .body-colour-chingu {
-
+    color: var(--theatre-blue-4);
 }
 
 /*good idea on all sites to default all images to this. And display:block can solve an occasional spacing issue.
@@ -480,6 +480,11 @@ a:focus {
 
 .footer--theatre {
     background: linear-gradient(110deg, var(--theatre-green-5) 20%, var(--theatre-green-4) 60%, var(--theatre-green-3) 100%);
+}
+
+.footer--chingu {
+    background: linear-gradient(110deg, var(--theatre-blue-5) 20%, var(--theatre-blue-4) 60%, var(--theatre-blue-3) 100%);
+
 }
 
 .footer-text,
@@ -1783,6 +1788,22 @@ a:focus {
     background-color: var(--theatre-green-1)
 }
 
+.bubble-5-blue {
+    background-color: var(--theatre-blue-5)
+}
+.bubble-4-blue {
+    background-color: var(--theatre-blue-4)
+}
+.bubble-3-blue {
+    background-color: var(--theatre-blue-3)
+}
+.bubble-2-blue {
+    background-color: var(--theatre-blue-2)
+}
+.bubble-1-blue {
+    background-color: var(--theatre-blue-1)
+}
+
 .bubble-yellow {
     background-color: #EACD37;
 }
@@ -1865,9 +1886,14 @@ a:focus {
     border-right: dashed 1px;
 }
 
-.empty-box, .step-number {
-    border-color: #2d5a12;
-    color: #2d5a12;
+.color-theatre, .color-theatre {
+    border-color: var(--theatre-green-3);
+    color: var(--theatre-green-3);
+}
+
+.color-chingu, .color-chingu {
+    border-color: var(--theatre-blue-3);
+    color: var(--theatre-blue-3);
 }
 
 @media (min-width: 400px) {
