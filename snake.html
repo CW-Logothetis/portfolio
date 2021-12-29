@@ -51,26 +51,19 @@
         <section id="introduction" class="intro">
            
             <div class="main-grid">
-                <h1 class="intro--title">Chingu Hackathon</h1>
-                <p class="intro--para">For the Chingu Holiday Hackathon 2021, teams were set the task of designing an app for Santa to use on Christmas Eve.</p>
-                <p class="intro--para">Eating too many cookies slows him down, so he has requested an app that will: let him assign a calorie target; track the calories consumed and burnt during the night; and monitor his progress on a dashboard that updates once per second.</p>            
-                <p class="intro--para">Together with two friends, we built a responsive dashboard and, after finishing the minimum requirements, added some stretch goals of our own.</p>
-                <p class="intro--para">We collaborated with Git/GitHub and used Notion to manage the project.</p>
+                <h1 class="intro--title intro--sm-title">Retro Nokia with changeable covers and Snake</h1>
+                <p class="intro--para">Back in the late 90’s, Nokia released the 5110 with X-Press On covers and the snake game. I desperately wanted it but when I was a teenager it was extremely rare for kids to have mobiles.</p>
+                <p class="intro--para">The TV advert used a famous piece of Spanish guitar music that included a couple of bars that became Nokia’s infamous start up sound. I’d just learnt how to play the piece on my guitar and thought this might convince my parents to buy me the phone.</p>            
+                <p class="intro--para">It didn’t work. But twenty years later, I built the snake game in a Scrimba tutorial and thought I could put it inside the phone again. And have the music play in the background. Finally, some ‘closure’.</p>
             </div>
 
             <div class="intro--stack main-grid">
                 <p class="intro--para-col-1"><strong>Stack:</strong></p>
-                <p class="intro--para-col-2 moveX-col-2">React* - Vanilla JS - Tailwind CSS - Git/GitHub</p>
-                <p class="intro--para-col-1"><strong>Collaboration:</strong></p>
-                <p class="intro--para-col-2 moveX-col-2">Notion (project mgt) / Discord (chat)</p>
+                <p class="intro--para-col-2">Vanilla JS - CSS3 - Git/GitHub</p>
                 <p class="intro--para-col-1"><strong>Design:</strong></p>
-                <p class="intro--para-col-2 moveX-col-2">Figma</p>
+                <p class="intro--para-col-2">VS Code - Chrome Dev Tools</p>
                 <p class="intro--para-col-1"><strong>Live Site:</strong></p>
-                <p class="intro--para-col-2 moveX-col-2">React (Vercel)</p>
-            </div>
-
-            <div class="main-grid">
-                <p class="intro--para chingu-intro-note">* - for the Hackathon we submitted a React app. I built it in Vanilla JS as a solo project. I describe both processes below and include links to both sites above. </p>
+                <p class="intro--para-col-2">Netlify</p>
             </div>
 
         </section>
@@ -86,23 +79,23 @@
             <div class="main-grid">
                 <h2 class="p-req--heading process--heading">Project Requirements</h2>
                 <div class="stage1 p-req--para">
-                    <h3 class="p-req--subheading">Minimum Hackathon Requirements</h3>
+                    <h3 class="p-req--subheading">MVP</h3>
                     <ul>
-                        <li>Teams may use any language, framework, or libraries</li>
-                        <li>Create a UI/UX that's distinctive, fun, and appealing</li>
-                        <li>Responsive on mobile and any screen size or orientation, and meet accessibility standards</li>
+                        <li class="ul-18px">Snake game - Vanilla JS</li>
+                        <li class="ul-18px">Design five X-Press On covers</li>
+                        <li class="ul-18px">Build photo carousel for the covers</li>
+                        <li class="ul-18px">Place Snake game inside the phone</li>
+                        <li class="ul-18px">Create a scoreboard</li>
+                        <li class="ul-18px">Include an option to play music</li>
                     </ul>
-                    <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
+                    
+                    <h3 class="p-req--subheading">Next Steps</h3>
                     <ul>
-                        <li>calories accumulated so far</li>
-                        <li>homes that give milk & cookies</li>
-                        <li>homes that give carrots & tea</li>
-                        <li>current delivery speed (homes per second)</li>
-                        <li>homes visited</li>
-                        <li>homes remaining</li>
-                        <li>time remaining</li>
+                        
+                        <li>Switch from Flexbox to Grid</li>
+                        <li>Place scoreboard inside phone, to toggle on at Game Over</li>
+                        <li>Connect YouTube via its API, rather than an embed.</li>
                     </ul>
-                    <p>Santa requests a start and stop button.</p>
 
                 </div>
 
@@ -114,7 +107,7 @@
 
         <!--- STACK TOOLS --->
 
-        <section id="stack" class="bugs main-grid">
+        <!-- <section id="stack" class="bugs main-grid">
             <h2 class="process--heading stack-heading">Stack and Tools</h2>
             <div class="bugs--para">
                 <p>For the Hackathon, we built the app with React and Tailwind CSS. As I had only just started learning React, it was a good opportunity for me to see it in action. (Note: for my portfolio I have built the app with Vanilla JS and CSS3, as a solo project. Deploy links to both apps are at the top of the page).</p>
@@ -122,7 +115,7 @@
                 <p>Our planning and management of tasks and bugs was done in Notion, using their lists and Kanban board. Chat was done on a Discord server or video calls (I’m in Greece, Tyler in London and Rob in New York). </p>
                 <p>The repo is with GitHub and we nominated Rob as team leader with responsibilty for merging pull requests.</p>
             </div>
-    </section>
+    </section> -->
 
         <!--- PROCESS --->
 
@@ -142,9 +135,10 @@
 
             <div class="process--step process--grid">
                 <div class="step-bubble-l bubble-white">
-                    <p class="process--para">Separately, we all wrote the code in Vanilla JS. And built our own unstyled app to demo Santa’s simulation.</p>
+                    <p class="process--para">Like many others, I followed a tutorial to learn more about arrays by building Snake.</p>
+                    <p class="process--para">I wanted to add more to it though, to practice CSS and more JavaScript.</p>
                 </div>
-                <div class="step-bubble-r bubble-5-blue">
+                <div class="step-bubble-r bubble-1-blue">
                     <img src="img/chingu-landscape-app.png" class="process--image" alt="">
                 </div>
             </div>
@@ -158,13 +152,12 @@
             </div>
             
             <div class="process--step process--grid">
-                <div class="step-bubble-l bubble-4-blue">
+                <div class="step-bubble-l bubble-yellow">
                     <img src="img/chingu-landscape-app.png" class="process--image" alt="">
                 </div>
                 <div class="step-bubble-r bubble-white">
-                    <p class="process--para">I created mock-ups for a simple mobile dashboard.</p>
-                    <p class="process--para">And then a tablet display inside Santa’s sleigh dashboard.</p>
-                    <p class="process--para">A real stretch goal would be adding Hyper Drive... I don’t see how Santa manages it without it.</p>
+                    <p class="process--para">Just before Snake I’d learnt how to build a photo carousel in Vanilla JS, so this seemed like a good opportunity to combine them.</p>
+                    <p class="process--para">They’d have taken too much space all in a line, so I turned to Google to find how to transform them. And add some animation.</p>
                 </div>
             </div>
 
@@ -178,10 +171,10 @@
 
             <div class="process--step process--grid">
                 <div class="step-bubble-l bubble-white">
-                    <p class="process--para">Rob set-up the project with Create React App and I added the styling using a combination of Grid and Flexbox with Tailwind CSS.</p>
-                    <p class="process--para">This gave us a working MVP, responsive on different screen sizes.</p>
+                    <p class="process--para">Putting Snake inside the phone presented a bit of a challenge responsively. I settled on using position relative and absolute, with a z-index.</p>
+                 
                 </div>
-                <div class="step-bubble-r bubble-3-blue">
+                <div class="step-bubble-r bubble-1-green">
                     <img src="img/chingu-landscape-app.png" class="process--image" alt="">
                 </div>
             </div>
@@ -195,14 +188,37 @@
             </div>
 
             <div class="process--step process--grid">
-                <div class="step-bubble-l bubble-2-blue">
+                <div class="step-bubble-l bubble-orange">
                     <img src="img/chingu-landscape-app.png" class="process--image" alt="">
                 </div>
                 <div class="step-bubble-r bubble-white">
-                    <p class="process--para">The photo gallery allowed me to use a little more JavaScript. And in the future I’ll add a lightbox to enlarge the photos; on mobile they’re too small.</p>
-                    <p class="process--para">The thumbnails are in a grid so that they’ll wrap on smaller screens.</p>
+                    <p class="process--para">The scoreboard was fairly straightforward. On landscape orientation it sits to the side of the phones in a flexbox.</p>
+                    <p class="process--para">On smaller screens the flexbox switches to column, but it’s not a good user experience to scroll. A future plan is to have the score inside the phone too, displaying at Game Over.</p>
                 </div>
             </div>
+
+            <div class="border-grid">
+                <div class="empty-box empty-box1 color-chingu"></div>
+                <div class="empty-box empty-box3 color-chingu"></div>
+                <div class="step-number color-chingu">Step 5</div>
+                <div class="empty-box empty-box5 color-chingu"></div>
+                <div class="empty-box empty-box7 color-chingu"></div>
+            </div>
+
+            <div class="process--step process--grid">
+                <div class="step-bubble-l bubble-white">
+                    <p class="process--para">I really want the option of Tarrega’s Gran Vals to play during the game, with a mute button for those who don’t want to listen.</p>
+                    <p class="process--para">To avoid breaching copyright I’ve taken the music from a YouTube video.</p>
+                    <p class="process--para">For the MVP I’ve just embedded youTube in an iFrame, in the flexbox to the left of the phones.</p>
+                    <p class="process--para">Again, on small screens this isn’t a great user experience.</p>
+                </div>
+                <div class="step-bubble-r bubble-pink">
+                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                </div>
+            </div>
+
+    
+
 
             </div>
         </section>
@@ -210,7 +226,7 @@
 
     <!--- Stretch Goals --->
 
-    <section id="stretch" class="p-req">
+    <!-- <section id="stretch" class="p-req">
         <div class="main-grid">
             <h2 class="process--heading stretch-heading">Stretch Goals</h2>
             <div class="stage1 stretch--para">
@@ -227,26 +243,26 @@
             </div>
 
           </div>
-    </section>
+    </section> -->
 
         <!--- BUGS --->
 
         <section id="bugs" class="bugs main-grid">
                 <h2 class="bugs--heading process--heading">Bugs and Solutions</h2>
                 <div class="bugs--para">
-                    <p>There were quite a few along the way:</p>
+                    <p>Quite a few CSS layout issues here:</p>
                     <ul class="text-align-left">
-                        <li>Tailwind is great, but I couldn’t add the background image. There is some conflict between CRA 4 and Tailwind 5. I tried running am alpha version of CRA 5, which is supposed to remedy this, but still didn’t have any success. It was quicker in the end to add the background image with old fashioned CSS</li>
-                        <li>Our fast-forward button needed clicking twice to start it. But it only needed clicking once to turn it off, and from then on it only needed clicking once to start it. As I’m new to React I couldn’t fathom the issue; the code was exactly the same for all the other buttons.</li>
-                        <li>Empty grid columns. I use these for padding along the sides, to keep all elements aligned. But I couldn’t control the minimum width with minmax(). They kept shrinking. I figured out I could add an empty character and set it’s colour to background colour. It’s a hacky solution; there must be a better way.</li>
-                        <li>Santa’s list for naughty and nice children. We were fetching random names from an API, and assigning them presents. The idea was that 10 children would be added to the screen, at the top of a list, every second as the dashboard updated. But of course the API won’t allow so many frequent requests. So one giant fetch needs doing, then (but we ran out of time) probably mapping 10 names each second to a new array for the dashboard.</li>
+                        <li>Putting the Snake game inside was easy. Until I resized the screen. I had hoped percentages would move everything responsively, but I’ve not made it work. So a few media queries are needed here.</li>
+                        <li>I added a fade in/out transition to the snake game when the phone covers change. I’ve added the same to the play button, but that doesn’t work.</li>
+                        <li>Complete overhaul of the design. A move to grid would help. And for smaller screens, removing the scoreboard and YouTube completely. </li>
+                        <li>The YouTube API would give greater control over play/pause/stop buttons. Plus to play the song automatically when the game starts, or to mute it.</li>
                     </ul>    
                 </div>
         </section>
 
 
          <!--- NEXT STEPS --->
-        <section class="next-steps">
+        <!-- <section class="next-steps">
         <div class="main-grid">
             <h2 class="process--heading">Next Steps</h2>
 
@@ -286,11 +302,11 @@
                 </div>
             </div>
         </div>
-        </section>  
+        </section>   -->
 
     </main>
 
-    <footer class="footer footer--chingu main-grid">
+    <footer class="footer main-grid">
         <!-- footer in two pieces. easier to move social around -->
         
         <a href="index.html" class="footer-text">Chris W. Logothetis</a>
