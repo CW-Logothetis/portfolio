@@ -1,15 +1,29 @@
 * {box-sizing: border-box;}
 
+/* ============================================================================================
+    Colours       ==========================================================================
+=============================================================================================== */
+
+
 html {
     font-size: 0.625rem;  
+    --theatre-green-1: #497036;
+    --theatre-green-2: #3f602e;
+    --theatre-green-3: #2a411f;
+    --theatre-green-4: #1d2c15;
+    --theatre-green-5: #162110;
 }
 
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
-    color: #404040;
+    color: #252525;
     line-height: 1.5; /* the default of 1 is too crushed. Start at 1.5 and play around*/
+}
+
+.body-colour-theatre {
+    color: var(--theatre-green-4);
 }
 
 /*good idea on all sites to default all images to this. And display:block can solve an occasional spacing issue.
@@ -110,7 +124,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #414141;
+    color: #efd81d;
 }
 
 @media (min-width: 400px) {
@@ -297,6 +311,10 @@ a:focus {
 
 .header-background {
     background: linear-gradient(90.01deg, #efd81d 0.01%, #DD4B25 49.17%, #254BDD 99.36%);
+}
+
+.header-background--theatre {
+    background: linear-gradient(90.01deg, var(--theatre-green-5) 0.01%, var(--theatre-green-3) 49.17%, var(--theatre-green-1) 99.36%);
 
 }
 
@@ -331,7 +349,7 @@ a:focus {
 
 .nav {
     position: fixed; /* for mobile, to cover screen when pops out*/
-    background: #000;
+    background: #404040;
     width: 100%;
     /* 0 0 0 0 fills the screen with background color*/
     top: 0;
@@ -354,14 +372,14 @@ a:focus {
     /* 100% height spreads the three links the length of the viewport*/
     height: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
 .nav-link {
     color: #fff;
     text-decoration: none;
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -439,15 +457,15 @@ a:focus {
 /* footer - on every page, so general layout */
 
 .footer {
-    background: #202020;
-    /* margin-top: 5em; */
+    max-width: 100%;
     padding: 4em 0;
     text-align: center;
+
+    background-color: #252525;
 }
 
-.footer-main,
-.social-list {
-    grid-column: 2 / -2;
+.footer--theatre {
+    background: linear-gradient(110deg, var(--theatre-green-5) 20%, var(--theatre-green-4) 60%, var(--theatre-green-3) 100%);
 }
 
 .footer-text,
@@ -458,12 +476,16 @@ a:focus {
 }
 
 .footer-text {
+    grid-column: 2/-2;
+    grid-row: 1;
     font-size: 1.8rem;
-    margin-top: 2em;
-    padding: 0;
+    margin-bottom: 1em;
+    text-decoration: none;
 }
 
 .footer-email {
+    grid-column: 2/-2;
+    grid-row: 2;
     font-size: 1.4rem;
     text-decoration: none;
     margin: 0 0 3em 0;
@@ -477,10 +499,11 @@ a:focus {
 }
 
 .social-list {
-    grid-area: social;
+    grid-column: 2/-2;
+    grid-row: 3;
     list-style: none;
     padding: 0;
-    margin: 4em 0 4.5em 0;
+    /* margin: 4em 0 4.5em 0; */
     display: flex;
     justify-content: center;
 }
@@ -495,23 +518,42 @@ a:focus {
     color: #efd81d;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
+    .footer {
+        align-items: center;
+    }
+
     .footer-text {
-        font-size: 2.4rem;
-        margin-top: 2em;
-       
+        grid-column: 2/5;
+        grid-row: 1;
+        margin: 0;
         padding: 0;
     }
     
     .footer-email {
-        font-size: 1.8rem;
-        text-decoration: none;
-        margin: 0 0 3em 0;
+        grid-column: 6/8;
+        grid-row: 1;
+        margin: 0;
         padding: 0;
+        font-size: 1.6rem;
     }
 
     .social-list {
-        margin: 6em 0;
+        grid-column: 9/12;
+        grid-row: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .footer-text {
+        font-size: 2.4rem;
+    }
+    
+    .footer-email {
+        font-size: 1.8rem;
     }
 
 }
@@ -1408,7 +1450,7 @@ a:focus {
     TEMPLATE for projects
 =============================================================================================================== */
 
-.gray-bg {
+.template-bg {
     background-color: #fff;
 }
 
@@ -1642,7 +1684,7 @@ a:focus {
 .process {
     margin: 5em 0;
     padding-bottom: 10em;
-    background: linear-gradient(180deg, rgba(250, 250, 249, 0.3) 0%, rgba(76, 99, 66, 0.4) 50%, rgba(15,23,11,0.1) 100%);
+    background: linear-gradient(180deg, rgba(250, 250, 249, 0.3) 0%, rgba(46, 59, 41, 0.4) 50%, rgba(15,23,11,0.1) 100%);
 }
 
 .process--heading {
@@ -1711,6 +1753,22 @@ a:focus {
     /* justify-content: center; */
 }
 
+.bubble-5-green {
+    background-color: var(--theatre-green-5)
+}
+.bubble-4-green {
+    background-color: var(--theatre-green-4)
+}
+.bubble-3-green {
+    background-color: var(--theatre-green-3)
+}
+.bubble-2-green {
+    background-color: var(--theatre-green-2)
+}
+.bubble-1-green {
+    background-color: var(--theatre-green-1)
+}
+
 .bubble-yellow {
     background-color: #EACD37;
 }
@@ -1735,6 +1793,12 @@ a:focus {
     margin: 4em auto;
     border-radius: 7px;
     box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
+    /* box-shadow:
+      1px 2px 2px hsl(100deg 52% 30% / 0.2),
+      2px 4px 4px hsl(100deg 52% 30%  / 0.2),
+      4px 8px 8px hsl(100deg 52% 30% / 0.2),
+      8px 16px 16px hsl(100deg 52% 30% / 0.2),
+      16px 32px 32px hsl(100deg 52% 30% / 0.2); */
 }
 
 .border-grid {
@@ -1745,7 +1809,7 @@ a:focus {
 }
 
 .empty-box {
-    height: 5em;
+    height: 3em;
     margin-top: 0.2em;
 }
 
@@ -1771,6 +1835,7 @@ a:focus {
 
     /* color: #263a1b; */
     font-size: 1.6rem;
+    font-weight: 600;
 
     border: 2px solid;
     border-radius: 20px;
@@ -1801,7 +1866,7 @@ a:focus {
 
     .process {
         padding-bottom: 20em;
-        background: linear-gradient(180deg, rgba(250, 250, 249, 0.1) 0%, rgba(58, 77, 49, 0.2) 50%, rgba(15,23,11,0.2) 100%);
+        background: linear-gradient(180deg, rgba(250, 250, 249, 0.1) 0%, rgba(41, 54, 34, 0.2) 50%, rgba(15,23,11,0.2) 100%);
     }
 
     .process--heading {
@@ -1843,6 +1908,10 @@ a:focus {
         font-size: 1.8rem;
     }
 
+    .empty-box {
+        height: 3.5em;
+    }
+
 }
 
 @media (min-width: 1050px) {
@@ -1868,8 +1937,15 @@ a:focus {
     .process--image {
         width: 85%;
         margin: 1em auto;
-        border-radius: 7px;
-        box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
+    }
+
+    .empty-box {
+        height: 5em;
+    }
+    .step-number {
+
+        font-size: 1.8rem;
+ 
     }
 
 }
