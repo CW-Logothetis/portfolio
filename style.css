@@ -526,7 +526,7 @@ a:focus {
 
 .footer-email:hover, .footer-email:focus, .footer-email:active, .footer-projects:hover, .footer-projects:focus, .footer-projects:active {
     color: #efd81d;
-    opacity: 1;
+    opacity: 0.9;
     cursor: pointer;
 }
 
