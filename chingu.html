@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+
+    <!-- link to CSS -->
+    <link href="style.css" rel="stylesheet">
+
+    <title>Portfolio of Chris W. Logothetis</title>
+</head>
+
+<body class="template-bg body-colour-chingu">
+    <!-- nav bar doesn't need to be in grid, a bit overkill, but keeps everything below aligned properly -->
+    <div class="header-background--chingu">
+    <header class="header header-home main-grid">
+        <div class="header-content">
+            <!-- insert logo later, just text for MVP -->
+            <a href="index.html" class="logo-link">Chris W. Logothetis</a>
+            
+            <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+
+            <nav class="nav">
+                <button aria-label="Close navigation" class="close-nav">&times;</button>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html#about-me" class="nav-link">about me</a></li>
+                    <li class="nav-item"><a href="index.html#projects" class="nav-link">projects</a></li>
+                    <li class="nav-item"><a href="mailto:cwlogo@pm.me" class="nav-link">cwlogo@pm.me</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </div>
+
+    <main>
+
+        <!--- INTRO --->
+
+        <section id="introduction" class="intro">
+           
+            <div class="main-grid">
+                <h1 class="intro--title">Chingu Hackathon</h1>
+                <p class="intro--para">For the Chingu Holiday Hackathon 2021, teams were set the task of designing an app for Santa to use on Christmas Eve.</p>
+                <p class="intro--para">Eating too many cookies slows him down, so he has requested an app that will: let him assign a calorie target; track the calories consumed and burnt during the night; and monitor his progress on a dashboard that updates once per second.</p>            
+                <p class="intro--para">Together with two friends, we built a responsive dashboard and, after finishing the minimum requirements, added some stretch goals of our own.</p>
+                <p class="intro--para">We collaborated with Git/GitHub and used Notion to manage the project.</p>
+            </div>
+
+            <div class="intro--stack main-grid">
+                <p class="intro--para-col-1"><strong>Stack:</strong></p>
+                <p class="intro--para-col-2">React* - Vanilla JS - Tailwind CSS - Git/GitHub</p>
+                <p class="intro--para-col-1"><strong>Collaboration:</strong></p>
+                <p class="intro--para-col-2">Notion (project mgt) / Discord (chat)</p>
+                <p class="intro--para-col-1"><strong>Design:</strong></p>
+                <p class="intro--para-col-2">Figma</p>
+                <p class="intro--para-col-1"><strong>Live Site:</strong></p>
+                <p class="intro--para-col-2">React (Vercel)</p>
+            </div>
+
+            <div class="main-grid">
+                <p class="intro--para">* - for the Hackathon we submitted a React app. I built it in Vanilla JS as a solo project. I describe both processes below and include links to both sites above. </p>
+            </div>
+
+        </section>
+
+        <!--- HERO --->
+        <section class="main-grid">
+            <img src="img/theatres-landscape.png" class="project-hero" alt="">
+        </section>
+
+        <!--- PROJECT REQUIREMENTS --->
+
+        <section id="p-req" class="p-req">
+            <div class="main-grid">
+                <h2 class="p-req--title">Project Requirements</h2>
+                <div class="stage1 p-req--para">
+                    <h3 class="p-req--subheading">Minimum Hackathon Requirements</h3>
+                    <ul>
+                        <li>Teams may use any language, framework, or libraries</li>
+                        <li>Create a UI/UX that's distinctive, fun, and appealing</li>
+                        <li>Responsive on mobile and any screen size or orientation, and meet accessibility standards</li>
+                    </ul>
+                    <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
+                    <ul>
+                        <li>calories accumulated so far</li>
+                        <li>homes that give milk & cookies</li>
+                        <li>homes that give carrots & tea</li>
+                        <li>current delivery speed (homes per second)</li>
+                        <li>homes visited</li>
+                        <li>homes remaining</li>
+                        <li>time remaining</li>
+                    </ul>
+                    <p>Santa requests a start and stop button.</p>
+
+                </div>
+                <!-- <div class="stage2 p-req--para">
+                    <h3>Next steps</h3>
+                    <ul>
+                        <li>A map of the region showing only the names of the theatres, which can be clicked to visit the appropriate page</li>
+                        <li>For each theatre, connect to a map API to find driving directions</li>
+                    </ul>
+                </div> -->
+
+                    <!-- <img src="img/chingu-landscape-app.png" class="p-req--image img-l" alt=""> -->
+                    <img src="img/chingu-landscape-app.png" class="p-req--image img-c" alt="">
+                    <!-- <img src="img/chingu-landscape-app.png" class="p-req--image img-r" alt=""> -->
+            </div>
+        </section>
+
+        <!--- STACK TOOLS --->
+
+        <section id="stack" class="bugs main-grid">
+            <h2 class="bugs--heading process--heading">Stack and Tools</h2>
+            <div class="bugs--para">
+                <p>For the Hackathon, we built the app with React and Tailwind CSS. As I had only just started learning React, it was a good opportunity for me to see it in action. (Note: for my portfolio I have built the app with Vanilla JS and CSS3, as a solo project. Deploy links to both apps are at the top of the page).</p>
+                <p>Tyler and Rob built the MVP in React, whilst I designed eveything in Figma, added styling to the React file with Tailwind, and then helped with bugs in the React code.</p>
+                <p>Our planning and management of tasks and bugs was done in Notion, using their lists and Kanban board. Chat was done on a Discord server or video calls (I’m in Greece, Tyler in London and Rob in New York). </p>
+                <p>The repo is with GitHub and we nominated Rob as team leader with responsibilty for merging pull requests.</p>
+            </div>
+    </section>
+
+        <!--- PROCESS --->
+
+        <section class="process">
+            
+            <div class="main-grid">
+            
+                <h2 class="process--heading">Process</h2>
+
+            <div class="border-grid">
+                <div class="empty-box empty-box1"></div>
+                <div class="empty-box empty-box3"></div>
+                <div class="step-number">Step 1</div>
+                <div class="empty-box empty-box5"></div>
+                <div class="empty-box empty-box7"></div>
+            </div>
+
+            <div class="process--step process--grid">
+                <div class="step-bubble-l bubble-white">
+                    <p class="process--para">Separately, we all wrote the code in Vanilla JS. And built our own unstyled app to demo Santa’s simulation.</p>
+                </div>
+                <div class="step-bubble-r bubble-5-green">
+                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                </div>
+            </div>
+
+            <div class="border-grid">
+                <div class="empty-box empty-box1"></div>
+                <div class="empty-box empty-box3"></div>
+                <div class="step-number">Step 2</div>
+                <div class="empty-box empty-box5"></div>
+                <div class="empty-box empty-box7"></div>
+            </div>
+            
+            <div class="process--step process--grid">
+                <div class="step-bubble-l bubble-4-green">
+                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                </div>
+                <div class="step-bubble-r bubble-white">
+                    <p class="process--para">I created mock-ups for a simple mobile dashboard.</p>
+                    <p class="process--para">And then a tablet display inside Santa’s sleigh dashboard.</p>
+                    <p class="process--para">A real stretch goal would be adding Hyper Drive... I don’t see how Santa manages it without it.</p>
+                </div>
+            </div>
+
+            <div class="border-grid">
+                <div class="empty-box empty-box1"></div>
+                <div class="empty-box empty-box3"></div>
+                <div class="step-number">Step 3</div>
+                <div class="empty-box empty-box5"></div>
+                <div class="empty-box empty-box7"></div>
+            </div>
+
+            <div class="process--step process--grid">
+                <div class="step-bubble-l bubble-white">
+                    <p class="process--para">Rob set-up the project with Create React App and I added the styling using a combination of Grid and Flexbox with Tailwind CSS.</p>
+                    <p class="process--para">This gave us a working MVP, responsive on different screen sizes.</p>
+                </div>
+                <div class="step-bubble-r bubble-3-green">
+                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                </div>
+            </div>
+
+            <div class="border-grid">
+                <div class="empty-box empty-box1"></div>
+                <div class="empty-box empty-box3"></div>
+                <div class="step-number">Step 4</div>
+                <div class="empty-box empty-box5"></div>
+                <div class="empty-box empty-box7"></div>
+            </div>
+
+            <div class="process--step process--grid">
+                <div class="step-bubble-l bubble-2-green">
+                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                </div>
+                <div class="step-bubble-r bubble-white">
+                    <p class="process--para">The photo gallery allowed me to use a little more JavaScript. And in the future I’ll add a lightbox to enlarge the photos; on mobile they’re too small.</p>
+                    <p class="process--para">The thumbnails are in a grid so that they’ll wrap on smaller screens.</p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+    </div>    
+
+    <section id="p-req" class="p-req">
+        <div class="main-grid">
+            <h2 class="p-req--title">Stretch Goals</h2>
+            <div class="stage1 p-req--para">
+                <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
+                <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
+                <ul>
+                    <li>Teams may use any language, framework, or libraries</li>
+                    <li>Create a UI/UX that's distinctive, fun, and appealing</li>
+                </ul>
+                <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
+                <p>Santa requests a start and stop button.</p>
+                <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
+                <p>Santa requests a start and stop button.</p>
+
+            </div>
+            <!-- <div class="stage2 p-req--para">
+                <h3>Next steps</h3>
+                <ul>
+                    <li>A map of the region showing only the names of the theatres, which can be clicked to visit the appropriate page</li>
+                    <li>For each theatre, connect to a map API to find driving directions</li>
+                </ul>
+            </div> -->
+
+                <!-- <img src="img/chingu-landscape-app.png" class="p-req--image img-l" alt=""> -->
+                <img src="img/chingu-landscape-app.png" class="p-req--image img-c" alt="">
+                <!-- <img src="img/chingu-landscape-app.png" class="p-req--image img-r" alt=""> -->
+        </div>
+    </section>
+
+        <!--- BUGS --->
+
+        <section id="bugs" class="bugs main-grid">
+                <h2 class="bugs--heading process--heading">Bugs and Solutions</h2>
+                <div class="bugs--para">
+                    <p>Hero images need compressing.</p>
+                    <p>It’s difficult using text over hero images that don’t have large light or dark areas. And the image moves a lot when it resizes for different screens. Quick fix will be enlarging text and lowing the opacity of the hero images. </p>
+                </div>
+        </section>
+
+
+         <!--- NEXT STEPS --->
+        <section class="next-steps">
+        <div class="main-grid">
+            <h2 class="process--heading">Next Steps</h2>
+
+            <div class="border-grid">
+                <div class="empty-box empty-box1"></div>
+                <div class="empty-box empty-box3"></div>
+                <div class="step-number">Idea 1</div>
+                <div class="empty-box empty-box5"></div>
+                <div class="empty-box empty-box7"></div>
+            </div>
+
+            <div class="process--step process--grid">
+                <div class="step-bubble-l bubble-white">
+                    <p class="process--para">I have a map of the region and I intend to place clickable links on the names of the theatres.</p>
+                    <p class="process--para">The map allows people to get a sense of each theatre’s location in relation to the others, and also see which one is close to an aiport or place they may be visiting.</p>
+                </div>
+                <div class="step-bubble-r bubble-5-green">
+                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                </div>
+            </div>
+
+            <div class="border-grid">
+                <div class="empty-box empty-box1"></div>
+                <div class="empty-box empty-box3"></div>
+                <div class="step-number">Idea 2</div>
+                <div class="empty-box empty-box5"></div>
+                <div class="empty-box empty-box7"></div>
+            </div>
+            
+            <div class="process--step process--grid">
+                <div class="step-bubble-l bubble-4-green">
+                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                </div>
+                <div class="step-bubble-r bubble-white">
+                    <p class="process--para">I’ve used MapBox before to design maps, but not its API. </p>
+                    <p class="process--para">Customising map colours and labels, plus enabling users to plan a trip by car would be a great addition.</p>
+                </div>
+            </div>
+        </div>
+        </section>  
+
+    </main>
+
+    <footer class="footer footer--theatre main-grid">
+        <!-- footer in two pieces. easier to move social around -->
+        
+        <a href="index.html" class="footer-text">Chris W. Logothetis</a>
+
+        <p class="footer-email"><a href="mailto:cwlogo@pm.me" class="footer-email">cwlogo@pm.me</a></p>
+
+        <ul class="social-list">
+            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-github"></i></a></li>
+        </ul>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

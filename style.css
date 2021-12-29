@@ -12,6 +12,13 @@ html {
     --theatre-green-3: #2a411f;
     --theatre-green-4: #1d2c15;
     --theatre-green-5: #162110;
+
+    --theatre-blue-1: #08438b;
+    --theatre-blue-2: #05336c;
+    --theatre-blue-3: #02234c;
+    --theatre-blue-4: #01142c;
+    --theatre-blue-5: #00060d;
+
 }
 
 body {
@@ -23,7 +30,11 @@ body {
 }
 
 .body-colour-theatre {
-    color: var(--theatre-green-4);
+    color: var(--theatre-blue-5);
+}
+
+.body-colour-chingu {
+
 }
 
 /*good idea on all sites to default all images to this. And display:block can solve an occasional spacing issue.
@@ -315,7 +326,10 @@ a:focus {
 
 .header-background--theatre {
     background: linear-gradient(90.01deg, var(--theatre-green-5) 0.01%, var(--theatre-green-3) 49.17%, var(--theatre-green-1) 99.36%);
+}
 
+.header-background--chingu {
+    background: linear-gradient(90.01deg, var(--theatre-blue-5) 0.01%, var(--theatre-blue-3) 49.17%, var(--theatre-blue-1) 99.36%);
 }
 
 .header {
@@ -1608,7 +1622,7 @@ a:focus {
 ================================================================ */
 
 .p-req {
-    background: linear-gradient(302deg, rgba(37,45,15,0.9) 0%, rgba(15,23,11,0.8981967787114846) 50%, rgba(15,23,11,1) 100%);
+    background: linear-gradient(302deg, var(--theatre-blue-5) 0%, var(--theatre-blue-4) 50%, var(--theatre-blue-3) 100%);
     /* background-color: #EACD37; */
     margin-bottom: 5em;
     padding-bottom: 10em;
