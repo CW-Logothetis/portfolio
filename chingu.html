@@ -60,17 +60,17 @@
 
             <div class="intro--stack main-grid">
                 <p class="intro--para-col-1"><strong>Stack:</strong></p>
-                <p class="intro--para-col-2">React* - Vanilla JS - Tailwind CSS - Git/GitHub</p>
+                <p class="intro--para-col-2 moveX-col-2">React* - Vanilla JS - Tailwind CSS - Git/GitHub</p>
                 <p class="intro--para-col-1"><strong>Collaboration:</strong></p>
-                <p class="intro--para-col-2">Notion (project mgt) / Discord (chat)</p>
+                <p class="intro--para-col-2 moveX-col-2">Notion (project mgt) / Discord (chat)</p>
                 <p class="intro--para-col-1"><strong>Design:</strong></p>
-                <p class="intro--para-col-2">Figma</p>
+                <p class="intro--para-col-2 moveX-col-2">Figma</p>
                 <p class="intro--para-col-1"><strong>Live Site:</strong></p>
-                <p class="intro--para-col-2">React (Vercel)</p>
+                <p class="intro--para-col-2 moveX-col-2">React (Vercel)</p>
             </div>
 
             <div class="main-grid">
-                <p class="intro--para">* - for the Hackathon we submitted a React app. I built it in Vanilla JS as a solo project. I describe both processes below and include links to both sites above. </p>
+                <p class="intro--para chingu-intro-note">* - for the Hackathon we submitted a React app. I built it in Vanilla JS as a solo project. I describe both processes below and include links to both sites above. </p>
             </div>
 
         </section>
@@ -84,7 +84,7 @@
 
         <section id="p-req" class="p-req">
             <div class="main-grid">
-                <h2 class="process--heading">Project Requirements</h2>
+                <h2 class="p-req--heading process--heading">Project Requirements</h2>
                 <div class="stage1 p-req--para">
                     <h3 class="p-req--subheading">Minimum Hackathon Requirements</h3>
                     <ul>
@@ -105,13 +105,6 @@
                     <p>Santa requests a start and stop button.</p>
 
                 </div>
-                <!-- <div class="stage2 p-req--para">
-                    <h3>Next steps</h3>
-                    <ul>
-                        <li>A map of the region showing only the names of the theatres, which can be clicked to visit the appropriate page</li>
-                        <li>For each theatre, connect to a map API to find driving directions</li>
-                    </ul>
-                </div> -->
 
                     <!-- <img src="img/chingu-landscape-app.png" class="p-req--image img-l" alt=""> -->
                     <img src="img/chingu-landscape-app.png" class="p-req--image img-c" alt="">
@@ -122,7 +115,7 @@
         <!--- STACK TOOLS --->
 
         <section id="stack" class="bugs main-grid">
-            <h2 class="process--heading">Stack and Tools</h2>
+            <h2 class="process--heading stack-heading">Stack and Tools</h2>
             <div class="bugs--para">
                 <p>For the Hackathon, we built the app with React and Tailwind CSS. As I had only just started learning React, it was a good opportunity for me to see it in action. (Note: for my portfolio I have built the app with Vanilla JS and CSS3, as a solo project. Deploy links to both apps are at the top of the page).</p>
                 <p>Tyler and Rob built the MVP in React, whilst I designed eveything in Figma, added styling to the React file with Tailwind, and then helped with bugs in the React code.</p>
@@ -215,34 +208,25 @@
         </section>
     </div>    
 
-    <section id="p-req" class="p-req">
+    <!--- Stretch Goals --->
+
+    <section id="stretch" class="p-req">
         <div class="main-grid">
-            <h2 class="process--heading">Stretch Goals</h2>
-            <div class="stage1 p-req--para">
-                <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
-                <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
+            <h2 class="process--heading stretch-heading">Stretch Goals</h2>
+            <div class="stage1 stretch--para">
+                <p>The creators of the Hackathon decided that if Santa hit 5,000 calories, he would slow down until he ate more carrots (carrots reduced his calorie intake). When we ran the simulation we saw that their maths was wrong and Santa would never go below 5,000 calories. He would never deliever all the presents!</p>
+                <p>So we decided he needed:</p>
                 <ul>
-                    <li>Teams may use any language, framework, or libraries</li>
-                    <li>Create a UI/UX that's distinctive, fun, and appealing</li>
+                    <li>a warning light to flash at 4,750 calories</li>
+                    <li>at this stage he should give the cookies to the reindeers until he burns more calories</li>
                 </ul>
-                <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
-                <p>Santa requests a start and stop button.</p>
-                <p>The app must have a dashboard that allows Santa to enter a calorie target and then update a display every second with the following information:</p>
-                <p>Santa requests a start and stop button.</p>
-
+                <p>But given that Santa needs to visit millions of homes in one night (24hours all in), he was still going too slow with the Chingu numbers. He must have a Hyper Drive and give something to the reindeers as a booster.</p>
+                <p>We added a ‘Fast Forward’ button to speed up the simulation. And whilst we were at it, a ‘Refresh’ button so that Santa and his elves could run simulations better.</p>
+                <p>As we’d given Santa a touchscreen dashboard we intended to use APIs to toggle the metrics with maps, his Spotify and a list of children, sorted by naughty and nice.</p>
+                <p>We started on the address book for presents for each child, but ran out of time.</p>
             </div>
-            <!-- <div class="stage2 p-req--para">
-                <h3>Next steps</h3>
-                <ul>
-                    <li>A map of the region showing only the names of the theatres, which can be clicked to visit the appropriate page</li>
-                    <li>For each theatre, connect to a map API to find driving directions</li>
-                </ul>
-            </div> -->
 
-                <!-- <img src="img/chingu-landscape-app.png" class="p-req--image img-l" alt=""> -->
-                <img src="img/chingu-landscape-app.png" class="p-req--image img-c" alt="">
-                <!-- <img src="img/chingu-landscape-app.png" class="p-req--image img-r" alt=""> -->
-        </div>
+          </div>
     </section>
 
         <!--- BUGS --->
@@ -251,7 +235,7 @@
                 <h2 class="bugs--heading process--heading">Bugs and Solutions</h2>
                 <div class="bugs--para">
                     <p>There were quite a few along the way:</p>
-                    <ul>
+                    <ul class="text-align-left">
                         <li>Tailwind is great, but I couldn’t add the background image. There is some conflict between CRA 4 and Tailwind 5. I tried running am alpha version of CRA 5, which is supposed to remedy this, but still didn’t have any success. It was quicker in the end to add the background image with old fashioned CSS</li>
                         <li>Our fast-forward button needed clicking twice to start it. But it only needed clicking once to turn it off, and from then on it only needed clicking once to start it. As I’m new to React I couldn’t fathom the issue; the code was exactly the same for all the other buttons.</li>
                         <li>Empty grid columns. I use these for padding along the sides, to keep all elements aligned. But I couldn’t control the minimum width with minmax(). They kept shrinking. I figured out I could add an empty character and set it’s colour to background colour. It’s a hacky solution; there must be a better way.</li>
