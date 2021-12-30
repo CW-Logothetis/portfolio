@@ -1628,6 +1628,7 @@ a:focus {
     }
 
     .intro--para-col-2 {
+        grid-column: 5/9;
         font-size: 2rem;
     }
 
