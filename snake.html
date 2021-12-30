@@ -63,14 +63,14 @@
                 <p class="intro--para-col-1"><strong>Design:</strong></p>
                 <p class="intro--para-col-2">VS Code - Chrome Dev Tools</p>
                 <p class="intro--para-col-1"><strong>Live Site:</strong></p>
-                <p class="intro--para-col-2">Netlify</p>
+                <p class="intro--para-col-2"><a href="#https://snake-nokia-5110.netlify.app/" class="intro--para-col-2 netlify-link">Netlify</a></p>
             </div>
 
         </section>
 
         <!--- HERO --->
         <section class="main-grid">
-            <img src="img/theatres-landscape.png" class="project-hero" alt="">
+            <img src="img/snake-hero.png" class="project-hero" alt="">
         </section>
 
         <!--- PROJECT REQUIREMENTS --->
@@ -135,11 +135,12 @@
 
             <div class="process--step process--grid">
                 <div class="step-bubble-l bubble-white">
-                    <p class="process--para">Like many others, I followed a tutorial to learn more about arrays by building Snake.</p>
-                    <p class="process--para">I wanted to add more to it though, to practice CSS and more JavaScript.</p>
+                    <p class="process--para">Like many others, to learn more about arrays I followed a tutorial to build 'Snake'.</p>
+                    <p class="process--para">The tutorial had no styling though, so I wanted to add to it and practice CSS and more JavaScript.</p>
+                    <p class="process--para">First, I had to draw an old Nokia 5110 and add a few different colours.</p>
                 </div>
                 <div class="step-bubble-r bubble-1-blue">
-                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                    <img src="img/snake-five-phones.png" class="process--image" alt="">
                 </div>
             </div>
 
@@ -153,11 +154,12 @@
             
             <div class="process--step process--grid">
                 <div class="step-bubble-l bubble-yellow">
-                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                    <img src="img/snake-carousel.png" class="process--image" alt="">
                 </div>
                 <div class="step-bubble-r bubble-white">
                     <p class="process--para">Just before Snake I’d learnt how to build a photo carousel in Vanilla JS, so this seemed like a good opportunity to combine them.</p>
-                    <p class="process--para">They’d have taken too much space all in a line, so I turned to Google to find how to transform them. And add some animation.</p>
+                    <p class="process--para">Five phones would've taken too much space all in a line, so I turned to Google to find how to transform them. And add some animation.</p>
+                    <p class="process--para">Having learnt about classes and prototypes, trying to adapt, re-build and understand the demo that I found was good practice.</p>
                 </div>
             </div>
 
@@ -171,11 +173,13 @@
 
             <div class="process--step process--grid">
                 <div class="step-bubble-l bubble-white">
-                    <p class="process--para">Putting Snake inside the phone presented a bit of a challenge responsively. I settled on using position relative and absolute, with a z-index.</p>
+                    <p class="process--para">Putting Snake inside the phone was simple enough, but making it responsive required a few media queries. I settled on using relative and absolute position, with a z-index.</p>
+                    <p class="process--para">Using the same techinque I wanted the start button to be on top of the phone's home key. Works in Chrome, but in Safari you can see it's slipped down.</p>
+
                  
                 </div>
                 <div class="step-bubble-r bubble-1-green">
-                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                    <img src="img/snake-mistake.png" class="process--image" alt="">
                 </div>
             </div>
 
@@ -189,11 +193,11 @@
 
             <div class="process--step process--grid">
                 <div class="step-bubble-l bubble-orange">
-                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                    <img src="img/snake-landscape.png" class="process--image" alt="">
                 </div>
                 <div class="step-bubble-r bubble-white">
-                    <p class="process--para">The scoreboard was fairly straightforward. On landscape orientation it sits to the side of the phones in a flexbox.</p>
-                    <p class="process--para">On smaller screens the flexbox switches to column, but it’s not a good user experience to scroll. A future plan is to have the score inside the phone too, displaying at Game Over.</p>
+                    <p class="process--para">I initially placed a scoreboard to the left, to record current and high scores. On landscape orientation it sits to the side of the phones in a flexbox.</p>
+                    <p class="process--para">On smaller screens I switched the flexbox to column, but it was poor UX to scroll up and down. A future plan is to have the score inside the phone too, displaying high scores at Game Over.</p>
                 </div>
             </div>
 
@@ -209,11 +213,11 @@
                 <div class="step-bubble-l bubble-white">
                     <p class="process--para">I really want the option of Tarrega’s Gran Vals to play during the game, with a mute button for those who don’t want to listen.</p>
                     <p class="process--para">To avoid breaching copyright I’ve taken the music from a YouTube video.</p>
-                    <p class="process--para">For the MVP I’ve just embedded youTube in an iFrame, in the flexbox to the left of the phones.</p>
-                    <p class="process--para">Again, on small screens this isn’t a great user experience.</p>
+                    <p class="process--para">For the MVP I’ve just embedded YouTube in an iFrame, and initially put it to the left of the phones.</p>
+                    <p class="process--para">But again, on small screens it disappears below. I really need to add the YouTube API and play/pause/stop/mute buttons</p>
                 </div>
                 <div class="step-bubble-r bubble-pink">
-                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
+                    <img src="img/snake-youtube.png" class="process--image" alt="">
                 </div>
             </div>
 
@@ -252,10 +256,14 @@
                 <div class="bugs--para">
                     <p>Quite a few CSS layout issues here:</p>
                     <ul class="text-align-left">
-                        <li class="ul-18px">Putting the Snake game inside was easy. Until I resized the screen. I had hoped percentages would move everything responsively, but I’ve not made it work. So a few media queries are needed here.</li>
+                        <li class="ul-18px">Putting the Snake game inside was easy. But the blue start button won't stay still. Need to re-look at what's going on with the percentages; they should all scale...</li>
                         <li class="ul-18px">I added a fade in/out transition to the snake game when the phone covers change. I’ve added the same to the play button, but that doesn’t work.</li>
-                        <li class="ul-18px">Complete overhaul of the design. A move to grid would help. And for smaller screens, removing the scoreboard and YouTube completely. </li>
-                        <li class="ul-18px">The YouTube API would give greater control over play/pause/stop buttons. Plus to play the song automatically when the game starts, or to mute it.</li>
+                        <li class="ul-18px">Complete overhaul of the design is needed. The 'About' section could be on another page, to save a scroll. The scoreboard needs to sit with snake in the phone.</li>
+                        <li class="ul-18px">On Game Over the snake grid should be replaced by a High Score list. Simple array; also show highest score of the day; keep it in local storage.</li>
+                        <li class="ul-18px">The YouTube API would give greater control over play/pause/stop buttons, and let the YouTube video be irrelevant.</li>
+                        <li class="ul-18px">Text-shadows aren't great and there's an opacity/alpha issue with the five phones.</li>
+                        
+
                     </ul>    
                 </div>
         </section>

@@ -402,6 +402,7 @@ a:focus {
     color: #EACD37;
 }
 
+
 .close-nav {
     border: 0;
     background: 0;
@@ -1660,6 +1661,7 @@ a:focus {
     width: 100%;
     max-width: 1200px;
     margin: 2em auto 7em auto;
+    border-radius: 7px;
     box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
 }
 
