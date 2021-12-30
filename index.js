@@ -1,6 +1,7 @@
 const closeButton = document.querySelector('.close-nav');
 const openButton = document.querySelector('.open-nav');
 const nav = document.querySelector('.nav');
+const links = document.querySelector('.nav-link')
 
 closeButton.addEventListener("click", () => {
     nav.classList.remove('navigation-open');
@@ -8,6 +9,10 @@ closeButton.addEventListener("click", () => {
 
 openButton.addEventListener("click", () => {
     nav.classList.add('navigation-open');
+}); 
+
+links.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
 }); 
 
 // --------------------------------------------------------------------
