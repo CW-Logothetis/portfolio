@@ -919,6 +919,42 @@ a:focus {
         /* grid-row: 3; */
     }
 }
+
+@media (max-height: 700px) {
+    h1 {
+        font-size: 8rem;
+    }
+
+    .hero-js, .hero-html, .hero-css {
+        font-size: 7rem;
+        letter-spacing: -0.75rem;
+    }
+
+    .hero-js {
+        -webkit-text-stroke: 8px #efd81d;
+        grid-column: 5/-3;
+        /* grid-row: 1; */
+    }
+    
+    .hero-html {
+        -webkit-text-stroke: 8px #DD4B25f4;
+        grid-column: 8/-3;
+        /* grid-row: 2; */
+    }
+    
+    .hero-css{
+        -webkit-text-stroke: 8px #254BDDd4;
+        grid-column: 8/-3;
+        /* grid-row: 3; */
+    }
+    .hero--name-flexbox {
+        margin-top: 1em;
+    }
+    .hero--stack-flexbox {
+        margin-top: -4em;
+    }
+}
+
 /* ============================================================================================================
     ABOUT ME
 =============================================================================================================== */
