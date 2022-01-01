@@ -77,11 +77,11 @@ h1, .hero-js, .hero-html, .hero-css {
     text-align: right;
 }
 
-.stroke-text{
-    -webkit-text-fill-color:transparent;
-  }
+/* .stroke-text{
+    -webkit-text-fill-color: transparent;
+  } */
 
-.hero-js {
+/* .hero-js {
     -webkit-text-stroke: 1px #efd81dd4;
     grid-column: 5/-2;
     grid-row: 1;
@@ -95,6 +95,24 @@ h1, .hero-js, .hero-html, .hero-css {
 
 .hero-css{
     -webkit-text-stroke: 1px #254BDDd4;
+    grid-column: 8/-2;
+    grid-row: 3;
+} */
+
+.hero-js {
+    color: #efd81dd4;
+    grid-column: 5/-2;
+    grid-row: 1;
+}
+
+.hero-html {
+    color: #DD4B25d4;
+    grid-column: 8/-2;
+    grid-row: 2;
+}
+
+.hero-css{
+    color: #254BDDd4;
     grid-column: 8/-2;
     grid-row: 3;
 }
@@ -583,7 +601,7 @@ a:focus {
     -webkit-animation-delay: 2s;
 }
 
-.hero-js {
+/* .hero-js {
     -webkit-text-stroke: 4px #efd81d;
 }
 
@@ -593,6 +611,18 @@ a:focus {
 
 .hero-css{
     -webkit-text-stroke: 4px #254BDDd4;
+} */
+
+.hero-js {
+    color: #efd81d;
+}
+
+.hero-html {
+    color: #DD4B25f4;
+    }
+
+.hero-css{
+    color: #254BDDd4;
 }
 
 @keyframes fadein {
@@ -610,7 +640,8 @@ a:focus {
 .front-animate:before {
     content: 'FRONT';
     letter-spacing: 0px;
-    -webkit-text-stroke: 4px #efd81d;
+    /* -webkit-text-stroke: 4px #efd81d; */
+    color: #efd81d;
     -webkit-animation-name: front-animate;
     animation-name: front-animate;
     -webkit-animation-duration: 8s;
@@ -621,7 +652,7 @@ a:focus {
     -webkit-animation-iteration-count: infinite;
 }
 
-@keyframes front-animate {
+/* @keyframes front-animate {
     0% {
         content: 'FRONT';
         -webkit-text-stroke: 5px #efd81d
@@ -635,21 +666,53 @@ a:focus {
         content: 'FRONT';
         -webkit-text-stroke: 5px #efd81d
     }
+} */
+
+@keyframes front-animate {
+    0% {
+        content: 'FRONT';
+        color: #efd81d
+    }
+    50% {
+        content: 'JavaScript';
+        letter-spacing: -3px;
+        color: #efd81d
+    }
+    100% {
+        content: 'FRONT';
+        color: #efd81d
+    }
 }
+
+/* @-webkit-keyframes front-animate {
+    0% {
+        content: 'FRONT';
+        -webkit-text-stroke: 5px #efd81d
+    }
+    50% {
+        content: 'JavaScript';
+        letter-spacing: -3px;
+        -webkit-text-stroke: 5px #efd81d
+    }
+    100% {
+        content: 'FRONT';
+        -webkit-text-stroke: 5px #efd81d
+    }
+} */
 
 @-webkit-keyframes front-animate {
     0% {
         content: 'FRONT';
-        -webkit-text-stroke: 5px #efd81d
+        color: #efd81d
     }
     50% {
         content: 'JavaScript';
         letter-spacing: -3px;
-        -webkit-text-stroke: 5px #efd81d
+        color: #efd81d
     }
     100% {
         content: 'FRONT';
-        -webkit-text-stroke: 5px #efd81d
+        color: #efd81d
     }
 }
 
@@ -663,7 +726,8 @@ a:focus {
 .end-animate:before {
     content: 'END';
     letter-spacing: 2px;
-    -webkit-text-stroke: 5px #DD4B25f4;
+    /* -webkit-text-stroke: 5px #DD4B25f4; */
+    color: #DD4B25f4;
     -webkit-animation-name: end-animate;
     -webkit-animation-duration: 8s;
     animation-name: end-animate;
@@ -674,7 +738,7 @@ a:focus {
     -webkit-animation-iteration-count: infinite;
 }
 
-@keyframes end-animate {
+/* @keyframes end-animate {
     0% {
         content: 'END';
         -webkit-text-stroke: 5px #DD4B25f4
@@ -704,6 +768,38 @@ a:focus {
         content: 'END';
         -webkit-text-stroke: 5px #DD4B25f4
     }
+} */
+
+@keyframes end-animate {
+    0% {
+        content: 'END';
+        color: #DD4B25f4
+    }
+    50% {
+        content: 'HTML5';
+        letter-spacing: -3px;
+        color: #DD4B25f4
+    }
+    100% {
+        content: 'END';
+        color: #DD4B25f4
+    }
+}
+
+@-webkit-keyframes end-animate {
+    0% {
+        content: 'END';
+        color: #DD4B25f4
+    }
+    50% {
+        content: 'HTML5';
+        letter-spacing: -3px;
+        color: #DD4B25f4
+    }
+    100% {
+        content: 'END';
+        color: #DD4B25f4
+    }
 }
 
 .dev-animate {
@@ -716,7 +812,8 @@ a:focus {
 .dev-animate:before {
     content: 'dev';
     letter-spacing: 2px;
-    -webkit-text-stroke: 5px #254BDDd4;
+    /* -webkit-text-stroke: 5px #254BDDd4; */
+    color: #254BDDd4;
     -webkit-animation-name: dev-animate;
     -webkit-animation-duration: 8s;
     animation-name: dev-animate;
@@ -727,7 +824,7 @@ a:focus {
     -webkit-animation-iteration-count: infinite;
 }
 
-@keyframes dev-animate {
+/* @keyframes dev-animate {
     0% {
         content: 'dev';
         -webkit-text-stroke: 5px #254BDDd4
@@ -757,8 +854,39 @@ a:focus {
         content: 'dev';
         -webkit-text-stroke: 5px #254BDDd4 
     }
+} */
+
+@keyframes dev-animate {
+    0% {
+        content: 'dev';
+        color: #254BDDd4
+    }
+    50% {
+        content: 'CSS3';
+        letter-spacing: -3px;
+        color: #254BDDd4
+    }
+    100% {
+        content: 'dev';
+        color: #254BDDd4
+    }
 }
 
+@-webkit-keyframes dev-animate {
+    0% {
+        content: 'dev';
+        color: #254BDDd4    
+    }
+    50% {
+        content: 'CSS3';
+        letter-spacing: -3px;
+        color: #254BDDd4 
+    }
+    100% {
+        content: 'dev';
+        color: #254BDDd4 
+    }
+}
 @media (min-width: 400px) {
     h1 {
         font-size: 6rem;
@@ -768,7 +896,7 @@ a:focus {
     }
 
     
-    .hero-js {
+    /* .hero-js {
         -webkit-text-stroke: 3px #efd81d;
     }
     
@@ -778,7 +906,7 @@ a:focus {
     
     .hero-css{
         -webkit-text-stroke: 3px #254BDDd4;
-    }
+    } */
 
 }
 
@@ -792,7 +920,7 @@ a:focus {
     }
 
     
-    .hero-js {
+    /* .hero-js {
         -webkit-text-stroke: 3px #efd81d;
     }
     
@@ -802,8 +930,7 @@ a:focus {
     
     .hero-css{
         -webkit-text-stroke: 3px #254BDDd4;
-    }
-
+    } */
 }
 
 @media (min-width: 600px) {
@@ -812,19 +939,6 @@ a:focus {
     }
     .hero-js, .hero-html, .hero-css {
         font-size: 8rem;
-    }
-
-    
-    .hero-js {
-        -webkit-text-stroke: 3px #efd81d;
-    }
-    
-    .hero-html {
-        -webkit-text-stroke: 3px #DD4B25f4;
-    }
-    
-    .hero-css{
-        -webkit-text-stroke: 3px #254BDDd4;
     }
 
 }
@@ -840,20 +954,37 @@ a:focus {
         font-size: 7rem;
     }
 
-    .hero-js {
+    /* .hero-js {
         -webkit-text-stroke: 5px #efd81d;
         grid-column: 5/-3;
-        /* grid-row: 1; */
     }
     
     .hero-html {
         -webkit-text-stroke: 5px #DD4B25f4;
         grid-column: 8/-3;
-        /* grid-row: 2; */
+        
     }
     
     .hero-css{
         -webkit-text-stroke: 5px #254BDDd4;
+        grid-column: 8/-3;
+        
+    } */
+
+    .hero-js {
+        
+        grid-column: 5/-3;
+        /* grid-row: 1; */
+    }
+    
+    .hero-html {
+        
+        grid-column: 8/-3;
+        /* grid-row: 2; */
+    }
+    
+    .hero-css{
+       
         grid-column: 8/-3;
         /* grid-row: 3; */
     }
@@ -878,7 +1009,7 @@ a:focus {
         font-size: 10rem;
         letter-spacing: -0.75rem;
     }
-    .hero-js {
+    /* .hero-js {
         -webkit-text-stroke: 6px #efd81d;
     }
     
@@ -888,7 +1019,8 @@ a:focus {
     
     .hero-css{
         -webkit-text-stroke: 6px #254BDDd4;
-    }
+    } */
+ 
 }
 
 @media (min-width: 1800px) {
@@ -902,19 +1034,19 @@ a:focus {
     }
 
     .hero-js {
-        -webkit-text-stroke: 8px #efd81d;
+        
         grid-column: 5/-3;
         /* grid-row: 1; */
     }
     
     .hero-html {
-        -webkit-text-stroke: 8px #DD4B25f4;
+      
         grid-column: 8/-3;
         /* grid-row: 2; */
     }
     
     .hero-css{
-        -webkit-text-stroke: 8px #254BDDd4;
+      
         grid-column: 8/-3;
         /* grid-row: 3; */
     }
@@ -930,22 +1062,39 @@ a:focus {
         letter-spacing: -0.75rem;
     }
 
-    .hero-js {
+    /* .hero-js {
         -webkit-text-stroke: 8px #efd81d;
         grid-column: 5/-3;
-        /* grid-row: 1; */
+        
     }
     
     .hero-html {
         -webkit-text-stroke: 8px #DD4B25f4;
         grid-column: 8/-3;
-        /* grid-row: 2; */
+        
     }
     
     .hero-css{
         -webkit-text-stroke: 8px #254BDDd4;
         grid-column: 8/-3;
-        /* grid-row: 3; */
+        
+    } */
+    .hero-js {
+      
+        grid-column: 5/-3;
+        
+    }
+    
+    .hero-html {
+      
+        grid-column: 8/-3;
+        
+    }
+    
+    .hero-css{
+      
+        grid-column: 8/-3;
+        
     }
     .hero--name-flexbox {
         margin-top: 1em;
