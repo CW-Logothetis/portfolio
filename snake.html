@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link to google fonts -->
+    <!--Insert OG Markup -->
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Snake: Back in the Nokia 5110" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="When I was a kid my parents wouldn't buy me the 5110 with the first xpress-on covers. Now I've put snake back in and can choose my own covers." />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://portfolio-cwlogothetis.netlify.app/img/snake_1200_770.png" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://portfolio-cwlogothetis.netlify.app/snake.html" />
+
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -13,26 +20,13 @@
     <!-- https://cdnjs.com/libraries/font-awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
 
-    <!--Insert OG Markup -->
-    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
-
-    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Snake: Back in the Nokia 5110" />
-
-    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="When I was a kid my parents wouldn't buy me the 5110 with the first xpress-on covers. Now I've put snake back in and can choose my own covers." />
-
-    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://portfolio-cwlogothetis.netlify.app/img/snake_1200_770.png" />
-
-    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://portfolio-cwlogothetis.netlify.app/snake.html" />
-
-
-    <!-- link to CSS -->
+    <!-- CSS -->
     <link href="style.css" rel="stylesheet">
 
     <title>Portfolio of Chris W. Logothetis</title>
 </head>
 
 <body>
-    <!-- nav bar doesn't need to be in grid, a bit overkill, but keeps everything below aligned properly -->
     <div class="header-background--white">
     <header class="header header-home main-grid">
         <div class="header-content">
@@ -58,7 +52,7 @@
 
     <main>
 
-        <!--- INTRO --->
+        <!---------------------- INTRO ---------------------->
 
         <section id="introduction" class="intro">
            
@@ -117,17 +111,9 @@
             </div>
         </section>
 
-        <!--- STACK TOOLS --->
+        <!--- STACK TOOLS - add in if re-build in React
+        <section></section> -->
 
-        <!-- <section id="stack" class="bugs main-grid">
-            <h2 class="process--heading stack-heading">Stack and Tools</h2>
-            <div class="bugs--para">
-                <p>For the Hackathon, we built the app with React and Tailwind CSS. As I had only just started learning React, it was a good opportunity for me to see it in action. (Note: for my portfolio I have built the app with Vanilla JS and CSS3, as a solo project. Deploy links to both apps are at the top of the page).</p>
-                <p>Tyler and Rob built the MVP in React, whilst I designed eveything in Figma, added styling to the React file with Tailwind, and then helped with bugs in the React code.</p>
-                <p>Our planning and management of tasks and bugs was done in Notion, using their lists and Kanban board. Chat was done on a Discord server or video calls (I’m in Greece, Tyler in London and Rob in New York). </p>
-                <p>The repo is with GitHub and we nominated Rob as team leader with responsibilty for merging pull requests.</p>
-            </div>
-    </section> -->
 
         <!--- PROCESS --->
 
@@ -240,26 +226,9 @@
         </section>
     </div>    
 
-    <!--- Stretch Goals --->
+    <!--- Stretch Goals
+    <section></section> -->
 
-    <!-- <section id="stretch" class="p-req">
-        <div class="main-grid">
-            <h2 class="process--heading stretch-heading">Stretch Goals</h2>
-            <div class="stage1 stretch--para">
-                <p>The creators of the Hackathon decided that if Santa hit 5,000 calories, he would slow down until he ate more carrots (carrots reduced his calorie intake). When we ran the simulation we saw that their maths was wrong and Santa would never go below 5,000 calories. He would never deliever all the presents!</p>
-                <p>So we decided he needed:</p>
-                <ul>
-                    <li>a warning light to flash at 4,750 calories</li>
-                    <li>at this stage he should give the cookies to the reindeers until he burns more calories</li>
-                </ul>
-                <p>But given that Santa needs to visit millions of homes in one night (24hours all in), he was still going too slow with the Chingu numbers. He must have a Hyper Drive and give something to the reindeers as a booster.</p>
-                <p>We added a ‘Fast Forward’ button to speed up the simulation. And whilst we were at it, a ‘Refresh’ button so that Santa and his elves could run simulations better.</p>
-                <p>As we’d given Santa a touchscreen dashboard we intended to use APIs to toggle the metrics with maps, his Spotify and a list of children, sorted by naughty and nice.</p>
-                <p>We started on the address book for presents for each child, but ran out of time.</p>
-            </div>
-
-          </div>
-    </section> -->
 
         <!--- BUGS --->
 
@@ -274,8 +243,6 @@
                         <li class="ul-18px">On Game Over the snake grid should be replaced by a High Score list. Simple array; also show highest score of the day; keep it in local storage.</li>
                         <li class="ul-18px">The YouTube API would give greater control over play/pause/stop buttons, and let the YouTube video be irrelevant.</li>
                         <li class="ul-18px">Text-shadows aren't great and there's an opacity/alpha issue with the five phones.</li>
-                        
-
                     </ul>    
                 </div>
         </section>
@@ -283,56 +250,13 @@
 
          <!--- NEXT STEPS --->
         <!-- <section class="next-steps">
-        <div class="main-grid">
-            <h2 class="process--heading">Next Steps</h2>
-
-            <div class="border-grid">
-                <div class="empty-box empty-box1 color-chingu"></div>
-                <div class="empty-box empty-box3 color-chingu"></div>
-                <div class="step-number color-chingu">Idea 1</div>
-                <div class="empty-box empty-box5 color-chingu"></div>
-                <div class="empty-box empty-box7 color-chingu"></div>
-            </div>
-
-            <div class="process--step process--grid">
-                <div class="step-bubble-l bubble-white">
-                    <p class="process--para">Finish the API list of naughty and nice children</p>
-                    <p class="process--para">On laptop/desktop, connect the tablet to the background image of Santa’s sleigh.</p>
-                </div>
-                <div class="step-bubble-r bubble-5-blue">
-                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
-                </div>
-            </div>
-
-            <div class="border-grid">
-                <div class="empty-box empty-box1 color-chingu"></div>
-                <div class="empty-box empty-box3 color-chingu"></div>
-                <div class="step-number color-chingu">Idea 2</div>
-                <div class="empty-box empty-box5 color-chingu"></div>
-                <div class="empty-box empty-box7 color-chingu"></div>
-            </div>
-            
-            <div class="process--step process--grid">
-                <div class="step-bubble-l bubble-4-blue">
-                    <img src="img/chingu-landscape-app.png" class="process--image" alt="">
-                </div>
-                <div class="step-bubble-r bubble-white">
-                    <p class="process--para">I’ve used MapBox before to design maps, but not its API. </p>
-                    <p class="process--para">Customising map colours and labels, plus enabling users to plan a trip by car would be a great addition.</p>
-                </div>
-            </div>
-        </div>
         </section>   -->
 
     </main>
 
     <footer class="footer main-grid">
-        <!-- footer in two pieces. easier to move social around -->
-        
         <a href="index.html" class="footer-text">Chris W. Logothetis</a>
-
         <p class="footer-email"><a href="mailto:cwlogo@pm.me" class="footer-email">cwlogo@pm.me</a></p>
-
         <p class="footer-projects"><a href="index.html#projects" class="footer-projects">projects</a></p>
 
         <ul class="social-list">
@@ -340,7 +264,6 @@
             <li class="social-item"><a href="https://twitter.com/CW_Logothetis" class="social-link"><i class="fab fa-twitter"></i></a></li>
             <li class="social-item"><a href="https://github.com/CW-Logothetis" class="social-link"><i class="fab fa-github"></i></a></li>
         </ul>
-
     </footer>
 
     <script src="index.js"></script>

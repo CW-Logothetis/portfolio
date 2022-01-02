@@ -5,31 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Insert OG Markup -->
+    <!--OG Markup -->
     <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
-
     <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Portfolio of Christopher W. Logothetis" />
-
     <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Hi there. Here's my front-end developer portfolio with some of my favourite JavaScript projects, dabbling with some React and Tailwind too. Before coding I was a lawyer, ran our family business and worked around the world; plenty of skills have been picked up along the way, and a lot of experiences working with different people in different countries." />
-
     <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://portfolio-cwlogothetis.netlify.app/img/portfolio-about-me.png" />
-
     <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://portfolio-cwlogothetis.netlify.app/" />
 
-    <!--Insert Twitter Card Markup -->
+    <!--Twitter Card Markup -->
     <meta name="twitter:card" content="summary_large_image" />
-
     <meta name="twitter:site" content="@CW_Logothetis" />
-
     <meta name="twitter:domain" content="https://portfolio-cwlogothetis.netlify.app/" />
-
     <meta name="twitter:title" content="Portfolio of Christopher W. Logothetis" />
-
     <meta name="twitter:description" content="Hi there. Here's my front-end developer portfolio with some of my favourite JavaScript projects, dabbling with some React and Tailwind too. Before coding I was a lawyer, ran our family business and worked around the world; plenty of skills have been picked up along the way, and a lot of experiences working with different people in different countries." />
-
     <meta name="twitter:image" content="https://portfolio-cwlogothetis.netlify.app/img/portfolio-about-me.png" />
 
-    <!-- link to google fonts -->
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;800;900&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -37,14 +28,14 @@
     <!-- https://cdnjs.com/libraries/font-awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
 
-    <!-- link to CSS -->
+    <!-- CSS -->
     <link href="style.css" rel="stylesheet">
 
     <title>Portfolio of Chris W. Logothetis</title>
 </head>
 
 <body>
-    <!-- nav bar doesn't need to be in grid, a bit overkill, but keeps everything below aligned properly -->
+    <!-- nav bar doesn't need to be in grid, a bit overkill, but helps align with rest of page -->
     <div class="header-background--white">
     <header class="header header-home main-grid">
         <div class="header-content">
@@ -72,10 +63,14 @@
         <section class="hero main-grid">      
 
                 <div class="hero--name-flexbox">
-                    <h1 class="hero-title hi">Hi,</h1>
+                    <!-- <h1 class="hero-title hi">Hi,</h1>
                     <h1 class="hero-title chris">I'm</h1>
                     <h1 class="hero-title chris">Chris</h1>
-                    <h1 class="hero-title logothetis">Logothetis</h1>
+                    <h1 class="hero-title logothetis">Logothetis</h1> -->
+                    <h1 class="hero-title hi">Hi,</br>
+                    I'm</br>
+                    Chris</br>
+                    Logothetis</h1>
                 </div>
 
                 <div class="hero--stack-flexbox">
@@ -86,6 +81,7 @@
             
         </section>
 
+        <!---------------------- ABOUT ME ---------------------->
 
         <section id="about" class="container-me">
             
@@ -98,8 +94,11 @@
                         <p>Once upon a time, I spent seven years as a lawyer in London, but my love for building stuff meant that the law wasn’t for me.</p>
                         <p>So I first built and ran my own business, and it was there that I fell in love with design and UX, then code and UI.</p>
                     </div>
-                        <!-- <img class="about-me--image" src="" alt=""> -->
+                    
+                    <!-- Might put social profile photo in here on desktop-->
                     <!-- <div class="circle"></div> -->
+                    <!-- <img class="about-me--image" src="" alt=""> -->
+
                 </div>
 
                 <div class="skills about-grid">
@@ -130,6 +129,7 @@
             </div>
         </section>    
 
+        <!---------------------- PROJECTS grid ---------------------->
 
         <section id ="projects" class="projects main-grid">
             <div class="projects--heading">
@@ -137,45 +137,45 @@
                 <p>Each project has a page with more screenshots and information
                     about how I built the site, what problems I had to solve and my future plans for it.</p>
             </div>  
+
             <div class="projects--box chingu">
                 <img src="img/chingu-landscape-app.png" class="product-image" alt="">
                 <h3>Chingu Hackathon</h3>
                 <p>Working with two friends to build a desktop and mobile dashboard for Santa, so he can monitor his progress on Christmas Eve.</p>
-                <p class="projects--box-stack-p"><strong>React, Vanilla JS & CSS</strong></p>
-                <p><a href="chingu.html"><strong>READ MORE ></strong></a></p>
-                
-                <!-- <div class="projects--flex-btm-row">
+                <div class="projects--flex-btm-row">
                     <p><strong>React, Vanilla JS & CSS</strong></p>
-                    <p><a href="ancient-theatres.html"><strong>READ MORE ></strong></a></p>
-                </div> -->
+                    <p><a href="chingu.html"><strong>READ MORE ></strong></a></p>
+                </div>
             </div>
         
             <div class="projects--box theatres">
                 <img src="img/theatres-landscape.png" class="product-image" alt="">
                 <h3>Ancient Greek Theatres</h3>
                 <p>A personal project to practice mobile-first web design. Vanilla JavaScript for switching tabs and a gallery. Working on a map API. </p>
-                <p class="projects--box-stack-p"><strong>Vanilla JS & CSS</strong></p>
-                <p><a href="ancient-theatres.html"><strong>READ MORE ></strong></a></p>
+                <div class="projects--flex-btm-row">
+                    <p><strong>Vanilla JS & CSS</strong></p>
+                    <p><a href="ancient-theatres.html"><strong>READ MORE ></strong></a></p>
+                </div>
             </div>
 
             <div class="projects--box snake">
                 <img src="img/snake-mistake.png" class="product-image" alt="">
                 <h3>Snake on the Nokia 5510</h3>
                 <p>As a kid I really wanted the Nokia 5510 with removable covers and snake. I wasn’t allowed it, so built it myself. </p>
-                <p class="projects--box-stack-p"><strong>Vanilla JS & CSS</strong></p>
-                <p><a href="snake.html"><strong>READ MORE ></strong></a></p>
+                <div class="projects--flex-btm-row">
+                    <p><strong>Vanilla JS & CSS</strong></p>
+                    <p><a href="snake.html"><strong>READ MORE ></strong></a></p>
+                </div>    
             </div>
 
         </section>
     </main>
 
-    <footer class="footer main-grid">
-        <!-- footer in two pieces. easier to move social around -->
-        
+    <!---------------------- FOOTER ---------------------->
+
+    <footer class="footer main-grid">        
         <a href="index.html" class="footer-text">Chris W. Logothetis</a>
-
         <p class="footer-email"><a href="mailto:cwlogo@pm.me" class="footer-email">cwlogo@pm.me</a></p>
-
         <p class="footer-projects"><a href="index.html#projects" class="footer-projects">projects</a></p>
 
         <ul class="social-list">
@@ -183,7 +183,6 @@
             <li class="social-item"><a href="https://twitter.com/CW_Logothetis" class="social-link"><i class="fab fa-twitter"></i></a></li>
             <li class="social-item"><a href="https://github.com/CW-Logothetis" class="social-link"><i class="fab fa-github"></i></a></li>
         </ul>
-
     </footer>
 
     <script src="index.js"></script>
