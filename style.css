@@ -51,7 +51,7 @@ img {
 =============================================================================================== */
 
 
-h1, h2, .hero-js, .hero-html, .hero-css, strong, .lingo {
+h1, h2,  strong, .lingo {
     /* Good idea to stop you later typing 'bold' and forgetting it only goes up by 100pts */
     font-weight: 700;
 }
@@ -73,7 +73,8 @@ h1, .hero-js, .hero-html, .hero-css {
 
 .hero-js, .hero-html, .hero-css {
     font-size: 5rem;
-    letter-spacing: 0px;
+    font-weight: 900;
+    letter-spacing: -4px;
     text-align: right;
 }
 
@@ -639,7 +640,7 @@ a:focus {
 
 .front-animate:before {
     content: 'FRONT';
-    letter-spacing: 0px;
+    letter-spacing: -4px;
     /* -webkit-text-stroke: 4px #efd81d; */
     color: #efd81d;
     -webkit-animation-name: front-animate;
@@ -675,7 +676,7 @@ a:focus {
     }
     50% {
         content: 'JavaScript';
-        letter-spacing: -3px;
+        letter-spacing: -10px;
         color: #efd81d
     }
     100% {
@@ -707,7 +708,7 @@ a:focus {
     }
     50% {
         content: 'JavaScript';
-        letter-spacing: -3px;
+        letter-spacing: -8px;
         color: #efd81d
     }
     100% {
@@ -725,7 +726,7 @@ a:focus {
 
 .end-animate:before {
     content: 'END';
-    letter-spacing: 2px;
+    letter-spacing: -4px;
     /* -webkit-text-stroke: 5px #DD4B25f4; */
     color: #DD4B25f4;
     -webkit-animation-name: end-animate;
@@ -777,7 +778,7 @@ a:focus {
     }
     50% {
         content: 'HTML5';
-        letter-spacing: -3px;
+        letter-spacing: -10px;
         color: #DD4B25f4
     }
     100% {
@@ -793,7 +794,7 @@ a:focus {
     }
     50% {
         content: 'HTML5';
-        letter-spacing: -3px;
+        letter-spacing: -10px;
         color: #DD4B25f4
     }
     100% {
@@ -811,7 +812,7 @@ a:focus {
 
 .dev-animate:before {
     content: 'dev';
-    letter-spacing: 2px;
+    letter-spacing: -4px;
     /* -webkit-text-stroke: 5px #254BDDd4; */
     color: #254BDDd4;
     -webkit-animation-name: dev-animate;
@@ -863,7 +864,7 @@ a:focus {
     }
     50% {
         content: 'CSS3';
-        letter-spacing: -3px;
+        letter-spacing: -10px;
         color: #254BDDd4
     }
     100% {
@@ -879,7 +880,7 @@ a:focus {
     }
     50% {
         content: 'CSS3';
-        letter-spacing: -3px;
+        letter-spacing: -10px;
         color: #254BDDd4 
     }
     100% {

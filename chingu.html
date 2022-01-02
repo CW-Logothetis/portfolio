@@ -214,7 +214,7 @@
         <div class="main-grid">
             <h2 class="process--heading stretch-heading">Stretch Goals</h2>
             <div class="stage1 stretch--para">
-                <p>The creators of the Hackathon decided that if Santa hit 5,000 calories, he would slow down until he ate more carrots (carrots reduced his calorie intake). When we ran the simulation we saw that their maths was wrong and Santa would never go below 5,000 calories. He would never deliever all the presents!</p>
+                <p>The creators of the Hackathon decided that if Santa hit 5,000 calories, he would slow down until he ate more carrots (carrots reduced his calorie intake). When we ran the simulation we saw that their maths was wrong and Santa would never go below 5,000 calories. He would never deliver all the presents!</p>
                 <p>So we decided he needed:</p>
                 <ul>
                     <li class="ul-18px">a warning light to flash at 4,750 calories</li>
@@ -236,7 +236,7 @@
                 <div class="bugs--para">
                     <p>There were quite a few along the way:</p>
                     <ul class="text-align-left">
-                        <li class="ul-18px">Tailwind is great, but I couldn’t add the background image. There is some conflict between CRA 4 and Tailwind 5. I tried running am alpha version of CRA 5, which is supposed to remedy this, but still didn’t have any success. It was quicker in the end to add the background image with old fashioned CSS</li>
+                        <li class="ul-18px">Tailwind is great, but I couldn’t add the background image. There is some conflict between CRA 4 and Tailwind 5. I tried running an alpha version of CRA 5, which is supposed to remedy this, but still didn’t have any success. It was quicker in the end to add the background image with old fashioned CSS</li>
                         <li class="ul-18px">Our fast-forward button needed clicking twice to start it. But it only needed clicking once to turn it off, and from then on it only needed clicking once to start it. As I’m new to React I couldn’t fathom the issue; the code was exactly the same for all the other buttons.</li>
                         <li class="ul-18px">Empty grid columns. I use these for padding along the sides, to keep all elements aligned. But I couldn’t control the minimum width with minmax(). They kept shrinking. I figured out I could add an empty character and set it’s colour to background colour. It’s a hacky solution; there must be a better way.</li>
                         <li class="ul-18px">Santa’s list for naughty and nice children. We were fetching random names from an API, and assigning them presents. The idea was that 10 children would be added to the screen, at the top of a list, every second as the dashboard updated. But of course the API won’t allow so many frequent requests. So one giant fetch needs doing, then (but we ran out of time) probably mapping 10 names each second to a new array for the dashboard.</li>
