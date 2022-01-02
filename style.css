@@ -589,9 +589,14 @@ a:focus {
     }
 }
 
-/* --------------------------------------------------- */
-/* -----------------   ANIMATIONS -------------------- */
-/* --------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------  */
+/* -------------------------------------------   ANIMATIONS   -------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------  */
+
+
+/* Looks great with text-stroke, and I tested it on chrome and safari on MacBook, where it worked. 
+But a friend tried it on Chrome and it didn't work. Nor on old iPhone. MDN shows all modern browsers ok with it,
+but warns that it's not standard. Have commented out text-stroke. I need to save it in a branch and clean up main. */
 
 .fade-in-out {
     opacity: 1;
@@ -888,6 +893,7 @@ a:focus {
         color: #254BDDd4 
     }
 }
+
 @media (min-width: 400px) {
     h1 {
         font-size: 6rem;
@@ -1002,7 +1008,6 @@ a:focus {
 @media (min-width: 1020px) {
     h1 {
         font-size: 12rem;
-        
     }
 
     .hero-js, .hero-html, .hero-css {
@@ -1021,7 +1026,6 @@ a:focus {
 @media (min-width: 1020px) and (min-height: 1300px) {
     h1 {
         font-size: 12rem;
-        
     }
 
     .hero-js, .hero-html, .hero-css {
@@ -1071,21 +1075,15 @@ a:focus {
     }
 
     .hero-js {
-        
         grid-column: 5/-3;
-        /* grid-row: 1; */
     }
     
-    .hero-html {
-      
+    .hero-html {      
         grid-column: 8/-3;
-        /* grid-row: 2; */
     }
     
-    .hero-css{
-      
+    .hero-css{      
         grid-column: 8/-3;
-        /* grid-row: 3; */
     }
 }
 
@@ -1117,32 +1115,28 @@ a:focus {
         
     } */
     .hero-js {
-      
         grid-column: 5/-3;
-        
     }
     
     .hero-html {
-      
-        grid-column: 8/-3;
-        
+        grid-column: 8/-3;    
     }
     
     .hero-css{
-      
         grid-column: 8/-3;
-        
     }
+
     .hero--name-flexbox {
         margin-top: 1em;
     }
+
     .hero--stack-flexbox {
         margin-top: -4em;
     }
 }
 
 /* ============================================================================================================
-    ABOUT ME
+    ----------------------------------------------   ABOUT ME   ---------------------------------------------- 
 =============================================================================================================== */
 
 .container-me {
@@ -1159,20 +1153,11 @@ a:focus {
 }
 
 .about-me {
-    
     grid-column: 1 / -1;
-    /* align-items: center; */
     justify-items: end;
     margin: 10em 0 5em 0;
-    /* padding: 5em 0; */
-
-    /* background-color: #DD4B25; */
-    /* border-radius: 500px; */
     color: white;
-
 }
-
-
 
 .about-me--text {
     display: flex;
@@ -1205,14 +1190,12 @@ a:focus {
 
 
 /* ============================================================================================================
-    Skills
+     ----------------------------------------------   Skills    ----------------------------------------------
 =============================================================================================================== */
 
 .skills {
     
     grid-column: 1 / -1;
-    /* margin: 5em 0; */
-    /* padding: 5em 0; */
     color: white;
 }
 
@@ -1224,7 +1207,6 @@ a:focus {
     grid-row: 1;
     margin-bottom: 5em;
     padding: 1em;
-    /* padding-bottom: 3em; */
 }
 
 .stack-link {
@@ -1236,23 +1218,19 @@ a:focus {
 }
 
 .js {
-    color: #efd81d;
-    
+    color: #efd81d;   
 }
 
 .html5 {
     color: #254BDD;
-    
 }
 
 .css3 {
     color: #DD4B25;
-    
 }
 
 .figma {
     color: blue;
-    
 }
 
 .git {
@@ -1271,7 +1249,6 @@ a:focus {
     grid-row: 2;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     text-align: center;
     margin-bottom: 7em;
 }
@@ -1298,19 +1275,16 @@ a:focus {
 .en {
     display: flex;
     flex-direction: column;
-    /* width: 30%; */
 }
 
 .gr {
     display: flex;
     flex-direction: column;
-    /* width: 30%; */
 }
 
 .jp {
     display: flex;
     flex-direction: column;
-    /* width: 30%; */
 }
 
 @media (min-width: 375px) {
@@ -1329,7 +1303,6 @@ a:focus {
 
 @media (min-width: 700px) {
     .container-me {
-        /* height: 80vh; */
         margin: 2em auto;
         padding-bottom: 7em;
     }
@@ -1339,16 +1312,12 @@ a:focus {
     }
 
     .about-me {
-    
         grid-column: 3 / -3;
         
         margin: 5em 0 3em 0;
         padding: 2em 0;
     
-        /* background-color: #DD4B25;
-        border-radius: 500px; */
         color: white;
-    
     }
 
     .skills {
@@ -1363,7 +1332,6 @@ a:focus {
     .stack-flex {
         margin-bottom: 3em;
         padding: 1em;
-        /* padding-bottom: 3em; */
     }
 
     .languages {
@@ -1383,19 +1351,13 @@ a:focus {
         font-weight: 400;
         font-size: 1.6rem;
     }
-    
 }
 
 @media (min-width: 1000px) {
 
     .about-me {
-    
         grid-column: 3 / -3;
-        
-        margin: 7em 0 4em 0;
-    
-        /* background-color: #DD4B25;
-        border-radius: 500px; */    
+        margin: 7em 0 4em 0;   
     }
 
     .about-me--heading {
@@ -1414,7 +1376,6 @@ a:focus {
         justify-content: space-between;
         grid-row: 1;
         margin: 0 -7em;
-        /* padding-bottom: 3em; */
     }
 
     .stack-link {
@@ -1438,7 +1399,6 @@ a:focus {
 
     .en, .gr, .jp {
         width: 33%;
-        
     }
 
     .language-level {
@@ -1446,7 +1406,6 @@ a:focus {
         padding: 0;
         margin:0;
     }
-
 }
 
 @media (min-width: 1200px) {
@@ -1454,17 +1413,11 @@ a:focus {
     .about-me p {
         font-size: 1.9rem;
         letter-spacing: -.02rem;
-        
     }
 
     .about-me {
-    
-        grid-column: 3 / -3;
-        
-        margin: 10em 0 5em 0;
-    
-        /* background-color: #DD4B25;
-        border-radius: 500px; */    
+        grid-column: 3 / -3;   
+        margin: 10em 0 5em 0;   
     }
 
     .about-me--heading {
@@ -1477,7 +1430,6 @@ a:focus {
 
     .skills {
         grid-column: 3 / -3;
-        /* margin: 0 0 5em 0; */
         padding: 0;
     }
 
@@ -1507,7 +1459,6 @@ a:focus {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /* margin: 0 -3em; */
     }
 
     .languages p{
@@ -1527,7 +1478,7 @@ a:focus {
 
 
 /* ============================================================================================================
-    PROJECTS
+     ----------------------------------------------  PROJECTS    ----------------------------------------------
 =============================================================================================================== */
 
 .projects--h {
@@ -1647,8 +1598,6 @@ a:focus {
     }
 
     .projects--box {
-        /* margin: 4em 0em; */
-        /* padding: 5em 2em; */
         border-radius: 20px;
     }
     
@@ -1699,8 +1648,6 @@ a:focus {
     }
 
     .projects--box {
-        /* margin: 4em 5em;
-        padding: 5em 2em; */
         border-radius: 20px;
     }
 
@@ -1745,7 +1692,9 @@ a:focus {
 
 
 /* ============================================================================================================
-    TEMPLATE for projects
+============================================================================================================
+====================================    TEMPLATE for projects   ===============================================
+============================================================================================================
 =============================================================================================================== */
 
 .template-bg {
@@ -1754,8 +1703,8 @@ a:focus {
 
 
 /* ============================================================================================================
-    Intro
-================================================================ */
+   -------------------------------------------- Intro -------------------------------------------- 
+================================================================================================================ */
 
 .intro {
     margin: 0em auto;
@@ -1763,10 +1712,8 @@ a:focus {
 
 .intro--title {
     grid-column: 2 / -2;
-
     margin: 1em 0 0.6em 0;
     padding: 0;
-
     font-size: 4rem;
     text-shadow: none;
     text-align: center;
@@ -1783,7 +1730,6 @@ a:focus {
 
 .intro--para {
     grid-column: 2 / -2;
-
     margin: 0 0 2em 0;
     padding: 0;
 }
@@ -1812,7 +1758,6 @@ a:focus {
     .intro--title, .intro--sm-title{
         font-size: 4rem;
     }
-     
 }
 
 @media (min-width: 700px) {
@@ -1839,7 +1784,6 @@ a:focus {
         margin-top: -3em;
         margin-bottom: 6em;
     }
-
 }
 
 @media (min-width: 900px) {
@@ -1862,8 +1806,6 @@ a:focus {
         margin-top: -3em;
         margin-bottom: 2em;
     }
-
-
 }
 
 @media (min-width: 1050px) {
@@ -1896,7 +1838,6 @@ a:focus {
         margin-top: -3em;
         margin-bottom: 8em;
     }
-
 }
 
 @media (min-width: 1800px) {
@@ -1904,14 +1845,13 @@ a:focus {
     .intro--title, .intro--sm-title{
     font-size: 9rem;
     }
-
 }
 
 
 
 /* ============================================================================================================
-    Hero
-================================================================ */
+    -------------------------------------------   Hero   ------------------------------------------------------ 
+================================================================================================================ */
 
 .project-hero {
     grid-column: 2/-2;
@@ -1936,7 +1876,6 @@ a:focus {
 
 @media (min-width: 900px) {
     .project-hero {
-        
         margin: 5em auto 12em auto;
     }
 }
@@ -1949,12 +1888,11 @@ a:focus {
 }
 
 /* ============================================================================================================
-    Project Requirements
-================================================================ */
+    ========================================  Project Requirements  ===============================================
+============================================================================================================*/
 
 .p-req {
     background: linear-gradient(302deg, var(--theatre-blue-5) 0%, var(--theatre-blue-4) 50%, var(--theatre-blue-3) 100%);
-    /* background-color: #EACD37; */
     
     margin-bottom: 5em;
     padding-top: 7em;
@@ -1980,10 +1918,8 @@ a:focus {
 
 .p-req--para {
     grid-column: 2 / -2;
-
     margin: 0;
     padding: 0;
-
     background-color: transparent;
 }
 
@@ -1996,20 +1932,12 @@ a:focus {
 }
 
 .p-req ul {
-    /* list-style-type: none; */
     margin-left: 1.5em;
     padding: 0;
 }
 
-    /* @media (min-width: 400px) {
-        .p-req--para {
-            grid-column: 3 / -3;
-        }
-    } */
-
     @media (min-width: 600px) {
         .p-req ul {
-            /* list-style-type: none; */
             margin-left: 2.5em;
             padding-bottom: 1.5em;
         }
@@ -2034,7 +1962,6 @@ a:focus {
 
 .p-req  li {
     font-size: 1.6em;
-    
 }
 
 .indent {
@@ -2052,7 +1979,6 @@ a:focus {
     grid-column: 8;
     align-self: end;
     z-index: 10;
-    
 }
 
 .img-r {
@@ -2062,16 +1988,16 @@ a:focus {
 }
 
 /* ============================================================================================================
-    Stack and Tools
-================================================================ */
+    ------------------------------------   Stack and Tools   ------------------------------------ 
+============================================================================================================= */
 
 .stack-heading {
     margin-bottom: 0.5em !important;
 }
 
 /* ============================================================================================================
-    Process
-================================================================ */
+   ------------------------------------        Process         ------------------------------------ 
+=============================================================================================================  */
 
 .process {
     margin: 5em 0 0em 0;
@@ -2081,10 +2007,8 @@ a:focus {
 
 .process--heading {
     grid-column: 2 / -2;
-
     margin: 0 0 0 0;
     padding: 0;
-
     font-size: 4rem;
     text-shadow: none;
     text-align: center;
@@ -2092,18 +2016,11 @@ a:focus {
 
 .process--step {
     grid-column: 2 / -2;
-    /* align-items: center; */
-
     display: flex;
     flex-direction: column;
-    
-    /* height: 60vh; */
-
     margin: 0 0 0em 0;
     padding: 0;
 }
-
-
 
 /* grid in grid instead of flexbox? */
 /* .process--grid {
@@ -2118,31 +2035,25 @@ a:focus {
 } */
 
 .step-bubble-l {
-    /* grid-column: 3/7; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* width: 80%; */
     min-height: 25em;
     padding: 0.75em;
-    
     background-color: #fff;
     border-radius: 20px 20px 0 0;
     
 }
 
-.step-bubble-r {
-    
+.step-bubble-r {  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    /* width: 80%; */
     min-height: 25em;
     padding: 1em;
     background-color: #fff;
     border-radius: 0 0 20px 20px;
-    /* justify-content: center; */
 }
 
 .bubble-5-green {
@@ -2194,8 +2105,6 @@ a:focus {
 }
 
 .process--para {
-    /* width: 60%; */
-    /* grid-column: 3; */
     margin: 0 2em;
     padding: 1em 0;
 }
@@ -2205,12 +2114,6 @@ a:focus {
     margin: 4em auto;
     border-radius: 7px;
     box-shadow: 6.7px 13.4px 13.4px hsl(0deg 0% 0% / 0.29);
-    /* box-shadow:
-      1px 2px 2px hsl(100deg 52% 30% / 0.2),
-      2px 4px 4px hsl(100deg 52% 30%  / 0.2),
-      4px 8px 8px hsl(100deg 52% 30% / 0.2),
-      8px 16px 16px hsl(100deg 52% 30% / 0.2),
-      16px 32px 32px hsl(100deg 52% 30% / 0.2); */
 }
 
 .border-grid {
@@ -2219,6 +2122,8 @@ a:focus {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
+
+/* -------------------    EMPTY BOXES for dotted border lines between process steps ------------------------ */
 
 .empty-box {
     height: 3em;
@@ -2245,7 +2150,6 @@ a:focus {
     align-items: center;
     width: 7em;
 
-    /* color: #263a1b; */
     font-size: 1.6rem;
     font-weight: 600;
 
@@ -2295,14 +2199,12 @@ a:focus {
         }
 
         .step-bubble-l {
-            /* grid-column: 3/7; */
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 50%;
             min-height: 0;
             padding: 2em;
-            /* background-color: #fff; */
             border-radius: 20px 0 0 20px;
             
         }
@@ -2316,9 +2218,7 @@ a:focus {
             width: 50%;
             min-height: 0;
             padding: 2em;
-            /* background-color: #fff; */
             border-radius: 0 20px 20px 0;
-            /* justify-content: center; */
         }
 
         .process--step p {
@@ -2368,8 +2268,8 @@ a:focus {
     }
 
 /* ============================================================================================================
-    Stretch Goals
-================================================================ */
+   ------------------------------------      Stretch Goals       ------------------------------------ 
+============================================================================================================== */
 
 .stretch-heading {
     margin-bottom: 0.5em !important;
@@ -2412,8 +2312,8 @@ a:focus {
         }
     }
 /* ============================================================================================================
-    Bugs
-================================================================ */
+   ----------------------------------------------  Bugs  ------------------------------------------------------ 
+============================================================================================================== */
 
 .bugs {
     align-content: center;
@@ -2456,6 +2356,7 @@ a:focus {
     text-align: left;
     margin-left: -2em;
 }
+
 
     @media (min-width: 700px) {
 
@@ -2503,13 +2404,14 @@ a:focus {
     }
 
 /* ============================================================================================================
-    Next Steps
-================================================================ */
+    -----------------------------------------  Next Steps  ----------------------------------------------------
+============================================================================================================== */
 
 .next-steps {
     padding: 10em 0;
     background: linear-gradient(180deg, rgba(223, 223, 221, 0.3) 0%, rgba(62, 63, 62, 0.3) 25%, rgba(208, 209, 208, 0.3) 100%);
 }
+
 
 @media (min-width: 700px) {
     .next-steps {
@@ -2523,8 +2425,6 @@ a:focus {
         padding-bottom: 20em;
     }
 }
-
-
 
 @media (min-width: 750px) {
     .p-req p, .process--para p, .stretch--para p, .bugs--para p, .ul-18px {
